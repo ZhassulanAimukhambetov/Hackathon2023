@@ -14,6 +14,9 @@
 		A203FCC8297A873400F8EB12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A203FCC7297A873400F8EB12 /* Assets.xcassets */; };
 		A203FCCB297A873400F8EB12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A203FCC9297A873400F8EB12 /* LaunchScreen.storyboard */; };
 		A203FCD3297AECB700F8EB12 /* ScrollViewCompare.swift in Sources */ = {isa = PBXBuildFile; fileRef = A203FCD2297AECB700F8EB12 /* ScrollViewCompare.swift */; };
+		A203FCD7297B0EF600F8EB12 /* AdvertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A203FCD6297B0EF600F8EB12 /* AdvertItem.swift */; };
+		A203FCDA297B137600F8EB12 /* ScrollViewComparePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A203FCD9297B137600F8EB12 /* ScrollViewComparePresenter.swift */; };
+		A203FCDB297B176B00F8EB12 /* AdvertResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = A203FCD4297B0D1100F8EB12 /* AdvertResponse.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		A203FCCA297A873400F8EB12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A203FCCC297A873400F8EB12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A203FCD2297AECB700F8EB12 /* ScrollViewCompare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewCompare.swift; sourceTree = "<group>"; };
+		A203FCD4297B0D1100F8EB12 /* AdvertResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AdvertResponse.json; sourceTree = "<group>"; };
+		A203FCD6297B0EF600F8EB12 /* AdvertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertItem.swift; sourceTree = "<group>"; };
+		A203FCD9297B137600F8EB12 /* ScrollViewComparePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewComparePresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 		A203FCBD297A873400F8EB12 /* CompareModule */ = {
 			isa = PBXGroup;
 			children = (
+				A203FCD5297B0EDF00F8EB12 /* Models */,
 				A203FCBE297A873400F8EB12 /* AppDelegate.swift */,
 				A203FCC0297A873400F8EB12 /* SceneDelegate.swift */,
 				A203FCC2297A873400F8EB12 /* ViewController.swift */,
@@ -65,8 +72,26 @@
 				A203FCC9297A873400F8EB12 /* LaunchScreen.storyboard */,
 				A203FCCC297A873400F8EB12 /* Info.plist */,
 				A203FCD2297AECB700F8EB12 /* ScrollViewCompare.swift */,
+				A203FCD9297B137600F8EB12 /* ScrollViewComparePresenter.swift */,
+				A203FCD8297B135500F8EB12 /* ComaprableModule */,
+				A203FCD4297B0D1100F8EB12 /* AdvertResponse.json */,
 			);
 			path = CompareModule;
+			sourceTree = "<group>";
+		};
+		A203FCD5297B0EDF00F8EB12 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A203FCD6297B0EF600F8EB12 /* AdvertItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A203FCD8297B135500F8EB12 /* ComaprableModule */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ComaprableModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +160,7 @@
 			files = (
 				A203FCCB297A873400F8EB12 /* LaunchScreen.storyboard in Resources */,
 				A203FCC8297A873400F8EB12 /* Assets.xcassets in Resources */,
+				A203FCDB297B176B00F8EB12 /* AdvertResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,8 +172,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A203FCC3297A873400F8EB12 /* ViewController.swift in Sources */,
+				A203FCD7297B0EF600F8EB12 /* AdvertItem.swift in Sources */,
 				A203FCBF297A873400F8EB12 /* AppDelegate.swift in Sources */,
 				A203FCC1297A873400F8EB12 /* SceneDelegate.swift in Sources */,
+				A203FCDA297B137600F8EB12 /* ScrollViewComparePresenter.swift in Sources */,
 				A203FCD3297AECB700F8EB12 /* ScrollViewCompare.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

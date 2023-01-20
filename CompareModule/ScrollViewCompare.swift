@@ -16,7 +16,7 @@ final class ScrollViewCompare: UIViewController {
         
     }
     
-//    private let presenter = ScrollViewComparePresenter()
+    private let presenter = ScrollViewComparePresenter()
     
     private let noMovableHeaderView: UIView = .init()
     
@@ -25,6 +25,7 @@ final class ScrollViewCompare: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        presenter.viewDidLoad()
         
         scrollView.frame = view.bounds
         scrollView.isDirectionalLockEnabled = true
@@ -44,8 +45,6 @@ final class ScrollViewCompare: UIViewController {
             
             print(result)
         }
-        
-//        presenter.viewDidLoad()
     }
     
     func createContent() {
@@ -56,10 +55,7 @@ final class ScrollViewCompare: UIViewController {
             scrollView.addSubview(containerView)
             
             if i == 0 {
-                appendHeaders(headerTitles: ["Header", "Header", "Header", "Header", "Header", "Header", "Header", "Header",
-                                             "Header", "Header", "Header", "Header", "Header", "Header", "Header", "Header",
-                                             "Header", "Header", "Header", "Header", "Header", "Header", "Header", "Header",
-                                             "Header", "Header", "Header", "Header", "Header", "Header", "Header", "Header"],
+                appendHeaders(headerTitles: presenter.getHeaders(),
                               parameterHeights: parameterSizes)
             }
         }
@@ -137,39 +133,40 @@ final class ScrollViewCompare: UIViewController {
     }
     
     private func createAdvert() -> Advert {
-        Advert(["asdkjcmpaoisemcpoiaec",
-                             "asdkjcmpaoisemcpoiaecasdj maosidjm poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m",
-                             "asdkjcmpaoisemcpoiaec",
-                             "asdkjcmpaoisemcpoiaecasdj maosidjm poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m",
-                             "asdkjcmpaoisemcpoiaecasdj maosidjm poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m",
-                             "asdkjcmpaoisemcpoiaecasdj maosidjm asdl;jc,apoiseucoaiepcoaijepoicajmpsoiejcpmaoie poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m",
-                             "asdkjcmpaoisemcpoiaecasdj maosidjm poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m",
-                             "asdkjcmpaoisemcpoiaecasdj maosidjm poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m",
-                             "asdkjcmpaoisemcpoiaecasdj maosidjm asdl;jc,apoiseucoaiepcoaijepoicajmpsoiejcpmaoie poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m",
-                             "asdkjcmpaoisemcpoiaec",
-                                                  "asdkjcmpaoisemcpoiaecasdj maosidjm poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m",
-                                                  "asdkjcmpaoisemcpoiaec",
-                                                  "asdkjcmpaoisemcpoiaecasdj maosidjm poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m",
-                                                  "asdkjcmpaoisemcpoiaecasdj maosidjm poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m",
-                                                  "asdkjcmpaoisemcpoiaecasdj maosidjm asdl;jc,apoiseucoaiepcoaijepoicajmpsoiejcpmaoie poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m",
-                                                  "asdkjcmpaoisemcpoiaecasdj maosidjm poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m",
-                                                  "asdkjcmpaoisemcpoiaecasdj maosidjm poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m",
-                                                  "asdkjcmpaoisemcpoiaecasdj maosidjm asdl;jc,apoiseucoaiepcoaijepoicajmpsoiejcpmaoie poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m",
-                             "asdkjcmpaoisemcpoiaec",
-                                                  "asdkjcmpaoisemcpoiaecasdj maosidjm poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m",
-                                                  "asdkjcmpaoisemcpoiaec",
-                                                  "asdkjcmpaoisemcpoiaecasdj maosidjm poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m",
-                                                  "asdkjcmpaoisemcpoiaecasdj maosidjm poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m",
-                                                  "asdkjcmpaoisemcpoiaecasdj maosidjm asdl;jc,apoiseucoaiepcoaijepoicajmpsoiejcpmaoie poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m",
-                                                  "asdkjcmpaoisemcpoiaecasdj maosidjm poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m",
-                                                  "asdkjcmpaoisemcpoiaecasdj maosidjm poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m",
-                                                  "asdkjcmpaoisemcpoiaecasdj maosidjm asdl;jc,apoiseucoaiepcoaijepoicajmpsoiejcpmaoie poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m",
-                             "asdkjcmpaoisemcpoiaec",
-                                                  "asdkjcmpaoisemcpoiaecasdj maosidjm poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m",
-                                                  "asdkjcmpaoisemcpoiaec",
-                                                  "asdkjcmpaoisemcpoiaecasdj maosidjm poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m",
-                                                  "asdkjcmpaoisemcpoiaecasdj maosidjm poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m"
-                            ])
+        presenter.getAdvert()
+//        Advert(["asdkjcmpaoisemcpoiaec",
+//                             "asdkjcmpaoisemcpoiaecasdj maosidjm poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m",
+//                             "asdkjcmpaoisemcpoiaec",
+//                             "asdkjcmpaoisemcpoiaecasdj maosidjm poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m",
+//                             "asdkjcmpaoisemcpoiaecasdj maosidjm poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m",
+//                             "asdkjcmpaoisemcpoiaecasdj maosidjm asdl;jc,apoiseucoaiepcoaijepoicajmpsoiejcpmaoie poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m",
+//                             "asdkjcmpaoisemcpoiaecasdj maosidjm poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m",
+//                             "asdkjcmpaoisemcpoiaecasdj maosidjm poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m",
+//                             "asdkjcmpaoisemcpoiaecasdj maosidjm asdl;jc,apoiseucoaiepcoaijepoicajmpsoiejcpmaoie poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m",
+//                             "asdkjcmpaoisemcpoiaec",
+//                                                  "asdkjcmpaoisemcpoiaecasdj maosidjm poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m",
+//                                                  "asdkjcmpaoisemcpoiaec",
+//                                                  "asdkjcmpaoisemcpoiaecasdj maosidjm poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m",
+//                                                  "asdkjcmpaoisemcpoiaecasdj maosidjm poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m",
+//                                                  "asdkjcmpaoisemcpoiaecasdj maosidjm asdl;jc,apoiseucoaiepcoaijepoicajmpsoiejcpmaoie poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m",
+//                                                  "asdkjcmpaoisemcpoiaecasdj maosidjm poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m",
+//                                                  "asdkjcmpaoisemcpoiaecasdj maosidjm poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m",
+//                                                  "asdkjcmpaoisemcpoiaecasdj maosidjm asdl;jc,apoiseucoaiepcoaijepoicajmpsoiejcpmaoie poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m",
+//                             "asdkjcmpaoisemcpoiaec",
+//                                                  "asdkjcmpaoisemcpoiaecasdj maosidjm poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m",
+//                                                  "asdkjcmpaoisemcpoiaec",
+//                                                  "asdkjcmpaoisemcpoiaecasdj maosidjm poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m",
+//                                                  "asdkjcmpaoisemcpoiaecasdj maosidjm poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m",
+//                                                  "asdkjcmpaoisemcpoiaecasdj maosidjm asdl;jc,apoiseucoaiepcoaijepoicajmpsoiejcpmaoie poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m",
+//                                                  "asdkjcmpaoisemcpoiaecasdj maosidjm poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m",
+//                                                  "asdkjcmpaoisemcpoiaecasdj maosidjm poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m",
+//                                                  "asdkjcmpaoisemcpoiaecasdj maosidjm asdl;jc,apoiseucoaiepcoaijepoicajmpsoiejcpmaoie poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m",
+//                             "asdkjcmpaoisemcpoiaec",
+//                                                  "asdkjcmpaoisemcpoiaecasdj maosidjm poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m",
+//                                                  "asdkjcmpaoisemcpoiaec",
+//                                                  "asdkjcmpaoisemcpoiaecasdj maosidjm poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m",
+//                                                  "asdkjcmpaoisemcpoiaecasdj maosidjm poaisjdm oiasjdm poiasjdmp oiasjdmp oijasmpodij mpaosidj m"
+//                            ])
     }
 }
 
