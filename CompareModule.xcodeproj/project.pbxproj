@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6EE56C7E297B24FE00EAD2E4 /* ScrollViewComparable+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE56C7D297B24FE00EAD2E4 /* ScrollViewComparable+Mock.swift */; };
 		6EE56C80297B25BE00EAD2E4 /* ComparableViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE56C7F297B25BE00EAD2E4 /* ComparableViewBuilder.swift */; };
+		6EE56C84297B4A5D00EAD2E4 /* Directions.json in Resources */ = {isa = PBXBuildFile; fileRef = 6EE56C83297B4A5D00EAD2E4 /* Directions.json */; };
 		A203FCBF297A873400F8EB12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A203FCBE297A873400F8EB12 /* AppDelegate.swift */; };
 		A203FCC1297A873400F8EB12 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A203FCC0297A873400F8EB12 /* SceneDelegate.swift */; };
 		A203FCC8297A873400F8EB12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A203FCC7297A873400F8EB12 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		6EE56C7D297B24FE00EAD2E4 /* ScrollViewComparable+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScrollViewComparable+Mock.swift"; sourceTree = "<group>"; };
 		6EE56C7F297B25BE00EAD2E4 /* ComparableViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparableViewBuilder.swift; sourceTree = "<group>"; };
+		6EE56C83297B4A5D00EAD2E4 /* Directions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Directions.json; sourceTree = "<group>"; };
 		A203FCBB297A873400F8EB12 /* CompareModule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompareModule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A203FCBE297A873400F8EB12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A203FCC0297A873400F8EB12 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				A203FCD2297AECB700F8EB12 /* ScrollViewCompare.swift */,
 				6EE56C7D297B24FE00EAD2E4 /* ScrollViewComparable+Mock.swift */,
 				6EE56C7F297B25BE00EAD2E4 /* ComparableViewBuilder.swift */,
+				6EE56C83297B4A5D00EAD2E4 /* Directions.json */,
 			);
 			path = CompareModule;
 			sourceTree = "<group>";
@@ -134,6 +137,7 @@
 			files = (
 				A203FCCB297A873400F8EB12 /* LaunchScreen.storyboard in Resources */,
 				A203FCC8297A873400F8EB12 /* Assets.xcassets in Resources */,
+				6EE56C84297B4A5D00EAD2E4 /* Directions.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,18 +13,18 @@ enum ComparableViewBuilder {
                                   width: CGFloat,
                                   headerHeight: CGFloat,
                                   spaicing: CGFloat) -> (views: [UIView], parameterHeights: [CGFloat]) {
+        let allParameters: [[String]] = adverts.map { $0.advertParameters(for: headers) }
         var heightArray = [CGFloat]()
         var yArray = [CGFloat]()
         var y: CGFloat = 0.0
-        
         for (index, _) in headers.enumerated() {
             var height: CGFloat = 0.0
             let label = UILabel(frame: .init(origin: .zero, size: .init(width: width - spaicing, height: 0)))
             label.numberOfLines = 0
             y = y + headerHeight + spaicing
             yArray.append(y)
-            adverts.forEach { advert in
-                label.text = advert.advertParameters[index]
+            adverts.enumerated().forEach { advertIndex, _ in
+                label.text = allParameters[advertIndex][index]
                 label.sizeToFit()
                 height = max(height, label.frame.height)
             }
@@ -34,11 +34,11 @@ enum ComparableViewBuilder {
         
         let views = adverts.enumerated().map { index, advert in
             let x = CGFloat(index) * width
-            return  createAdvertContainerView(advert: advert,
-                                             x: x,
-                                             width: width,
-                                             spacing: spaicing,
-                                             yArr: yArray)
+            return  createAdvertContainerView(advertParameters: allParameters[index],
+                                              x: x,
+                                              width: width,
+                                              spacing: spaicing,
+                                              yArr: yArray)
         }
         
         return (views, heightArray)
@@ -74,33 +74,29 @@ enum ComparableViewBuilder {
             }
             
             let label = UILabel(frame: .init(x: spacing, y: y, width: width / 2, height: headerHeight))
-            label.backgroundColor = .blue
             label.text = headerTitle
-            if index == headerTitles.count - 1 {
-                label.backgroundColor = .red
-            }
+            label.font = .systemFont(ofSize: 12)
+            label.textColor = .lightGray
             noMovableHeaderView.addSubview(label)
         }
         
         return noMovableHeaderView
     }
     
-    private static func createAdvertContainerView(advert: ComparableAdvert,
-                                          x: CGFloat,
-                                          width: CGFloat,
-                                          spacing: CGFloat,
-                                          yArr: [CGFloat]) -> UIView {
+    private static func createAdvertContainerView(advertParameters: [String],
+                                                  x: CGFloat,
+                                                  width: CGFloat,
+                                                  spacing: CGFloat,
+                                                  yArr: [CGFloat]) -> UIView {
         let containerView = UIView()
         var lastHeigt: CGFloat = 0.0
-        advert.advertParameters.enumerated().forEach { (index, parameter) in
+        advertParameters.enumerated().forEach { (index, parameter) in
             let size = CGSize(width: width - spacing, height: 0)
             let label = UILabel(frame: .init(origin: .init(x: spacing, y: yArr[index]), size: size))
             label.text = parameter
             label.numberOfLines = 0
+            label.font = .systemFont(ofSize: 14)
             label.sizeToFit()
-            if index == advert.advertParameters.count - 1 {
-                label.backgroundColor = .brown
-            }
             containerView.addSubview(label)
             lastHeigt = label.frame.height
         }

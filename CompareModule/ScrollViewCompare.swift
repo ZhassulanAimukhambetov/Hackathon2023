@@ -30,8 +30,8 @@ final class ScrollViewCompare: UIViewController {
     }
     
     private func setupParameters() {
-        let headers = hedares()
         let adverts = adverts()
+        let headers = adverts.headers
         let (views, parameterHeights) = ComparableViewBuilder
             .createAdvertViews(for: adverts,
                                headers: headers,
@@ -74,14 +74,17 @@ extension ScrollViewCompare: UIScrollViewDelegate {
 extension ScrollViewCompare {
     enum Constants {
         static let itemSpacing: CGFloat = 16.0
-        static let headerHeight: CGFloat = 44.0
+        static let headerHeight: CGFloat = 22.0
     }
 }
 
 
-struct Model {
-    let parameters: [[String: String]]
+struct Model: Decodable {
+    let advert: Advert
     
+    struct Advert: Decodable {
+        let parameters: [[String: String]]
+    }
     
     enum Constants {
         static let name = "label"
@@ -90,30 +93,30 @@ struct Model {
 }
 
 extension Model: ComparableAdvert {
-    var advertParameters: [String] {
-        parameters.map { $0[Constants.value] ?? " - " }
+    func advertParameters(for names: [String]) -> [String] {
+        var dict: [String: String] = [:]
+        
+        advert.parameters.forEach {
+            guard let name = $0[Constants.name],
+                  let value = $0[Constants.value] else {
+                return
+            }
+            dict[name] = value
+        }
+        
+        return names.map { dict[$0] ?? " - " }
     }
-    
-    
 }
 
 protocol ComparableAdvert {
-    var advertParameters: [String] { get }
-}
-
-
-final class Advert: ComparableAdvert {
-    let advertParameters: [String]
-    
-    init(_ parameters: [String?]) {
-        self.advertParameters = parameters.map { $0 ?? " - "}
-    }
+    func advertParameters(for names: [String]) -> [String]
 }
 
 
 extension Array where Element == Model {
     var headers: [String] {
-        let x = map { $0.parameters }
+        let x = map { $0.advert.parameters }
+        if x.isEmpty { return [] }
         var indexX = 0
         var count = 0
         x.enumerated().forEach { index, parameters in

@@ -1,0 +1,2194 @@
+
+[
+    {
+        "spareParts": {
+            "total": 43220,
+            "adverts": [
+                {
+                    "id": 147354495,
+                    "title": "АКПП КОНТРАКНЫЙ АВТОМАТ 2GR.3.5",
+                    "price": "620 000 ₸",
+                    "thumbnailUrl": "https://photos-kl.kcdn.kz/webp/cb/cbbdfbaa-9244-4893-b533-98353e4478b0/1-120x90.webp"
+                },
+                {
+                    "id": 147626070,
+                    "title": "Двигатель 1MZ-FE (VVT-i), объем 3 л., привезенный из Японии",
+                    "price": "550 000 ₸",
+                    "thumbnailUrl": "https://photos-kl.kcdn.kz/webp/0c/0cee9603-2b9a-4de3-8f65-9842aef34578/1-120x90.webp"
+                },
+                {
+                    "id": 96826408,
+                    "title": "Двигатель камри 2az-fe 2.4 Camry 2gr-fe",
+                    "price": "50 000 ₸",
+                    "thumbnailUrl": "https://photos-kl.kcdn.kz/fc/fc2c4cd2-8af6-42d0-a4c9-7397c6a9ee15/1-120x90.webp"
+                },
+                {
+                    "id": 146215450,
+                    "title": "Привод сброе правый",
+                    "price": "130 000 ₸",
+                    "thumbnailUrl": "https://photos-kl.kcdn.kz/webp/0d/0d383761-463e-42c1-b9cf-97f987d22da8/1-120x90.webp"
+                },
+                {
+                    "id": 147645304,
+                    "title": "Подкрыльник",
+                    "price": "20 000 ₸",
+                    "thumbnailUrl": "https://photos-kl.kcdn.kz/webp/0b/0b6e5047-1751-4427-999b-9843527b4838/1-120x90.webp"
+                },
+                {
+                    "id": 135729901,
+                    "title": "Двигатель 2GR-FE 3.5л Lexus RX350 Мотор (ДВС) и Каробка (АКПП)",
+                    "price": "95 000 ₸",
+                    "thumbnailUrl": "https://photos-kl.kcdn.kz/webp/91/916722e3-62a9-443e-abaf-568076bb3698/1-120x90.webp"
+                },
+                {
+                    "id": 135729671,
+                    "title": "Двигатель на Тойота Камри 2.4л.2AZ-FE VVTi на Toyota Camry",
+                    "price": "95 000 ₸",
+                    "thumbnailUrl": "https://photos-kl.kcdn.kz/webp/45/450645ab-a5ef-4d22-9c86-d550239e2b66/5-120x90.webp"
+                },
+                {
+                    "id": 46528144,
+                    "title": "Акпп Камри 2, 4",
+                    "price": "220 000 ₸",
+                    "thumbnailUrl": "https://photos-kl.kcdn.kz/webp/cd/cd197345-44a8-498d-a9d0-872df4430dda/1-120x90.webp"
+                },
+                {
+                    "id": 145971703,
+                    "title": "Катализатор camry 30-",
+                    "price": "150 000 ₸",
+                    "thumbnailUrl": "https://photos-kl.kcdn.kz/webp/41/411c8196-e246-4bac-b961-97ede226ee47/1-120x90.webp"
+                }
+            ]
+        },
+        "sellerAdverts": {
+            "id": 146537745,
+            "sellerId": 922443,
+            "sections": [
+                {
+                    "id": 1,
+                    "label": "Машины",
+                    "categories": [
+                        {
+                            "id": 2,
+                            "label": "Легковые",
+                            "name": "auto.car",
+                            "advertsCount": 2
+                        }
+                    ],
+                    "name": "cars"
+                }
+            ],
+            "sellerName": "ер 333"
+        },
+        "advert": {
+            "updatedAt": "2023-01-21T03:55:40+06:00",
+            "region": "Алматы",
+            "categoryId": 2,
+            "carYear": 2020,
+            "id": 146537745,
+            "commentsAllowedFor": 0,
+            "storage": "live",
+            "emergencyLabel": "С пробегом",
+            "adsCityTag": "almaty",
+            "isTradeInPro": false,
+            "listerType": "regular",
+            "parameters": [
+                {
+                    "label": "Город",
+                    "value": "Алматы"
+                },
+                {
+                    "label": "Поколение",
+                    "value": "2020 - н.в. XV70 рестайлинг (V75)"
+                },
+                {
+                    "label": "Кузов",
+                    "value": "седан"
+                },
+                {
+                    "label": "Объем двигателя, л",
+                    "value": "2.5 (бензин)"
+                },
+                {
+                    "label": "Пробег",
+                    "value": "33 768 км"
+                },
+                {
+                    "label": "Коробка передач",
+                    "value": "автомат"
+                },
+                {
+                    "label": "Привод",
+                    "value": "передний привод"
+                },
+                {
+                    "label": "Руль",
+                    "value": "слева"
+                },
+                {
+                    "label": "Цвет",
+                    "value": "черный металлик"
+                },
+                {
+                    "label": "Растаможен в Казахстане",
+                    "value": "Да"
+                }
+            ],
+            "contactButtons": [
+                {
+                    "color": "#2A81DD",
+                    "textColor": "#FFFFFF",
+                    "type": "send_message",
+                    "position": 0,
+                    "text": "Написать"
+                },
+                {
+                    "color": "#64BD38",
+                    "textColor": "#FFFFFF",
+                    "type": "call",
+                    "position": 1,
+                    "text": "Позвонить"
+                }
+            ],
+            "rejectReasonMessage": "",
+            "autoCarMark": {
+                "id": "96",
+                "value": "Toyota"
+            },
+            "listDescription": "2020 г., Б/у седан, 2.5 л, бензин, КПП автомат, с пробегом 33 768 км, черный, металлик, Машина в хорошем состоянии, юридический чистый, маленький пробег по РК, новая зимняя резина",
+            "type": "cars",
+            "viewsCount": 6705,
+            "isUp": false,
+            "isFavorite": false,
+            "hasDescendants": false,
+            "showScammerAlert": true,
+            "autoCarModel": {
+                "id": "12",
+                "value": "Camry"
+            },
+            "descriptionText": "Машина в хорошем состоянии, юридический чистый, маленький пробег по РК, новая зимняя резина.",
+            "name": "Toyota Camry",
+            "phoneViewsCount": 0,
+            "isFast": false,
+            "isNewAutoPro": false,
+            "status": "live",
+            "rejectReasonId": null,
+            "isHot": true,
+            "advertRun": 33768,
+            "regionAlias": "kz/region-almatinskaya-oblast/Алматы",
+            "sectionId": 1,
+            "price": 15500000,
+            "isVip": true,
+            "isDealer": false,
+            "isNewAutoCondition": false,
+            "isOrderCallBackButtonVisible": false,
+            "isTorg": false,
+            "addDate": "2023-01-21T23:59:59+06:00",
+            "showTillDate": "2023-01-28T03:55:40+06:00",
+            "photos": [
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/3-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/3-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/4-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/4-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/1-1200x0.webp",
+                    "height": 768,
+                    "width": 1024,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/1-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/2-0x900.webp",
+                    "height": 1200,
+                    "width": 900,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/2-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/5-0x900.webp",
+                    "height": 1200,
+                    "width": 900,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/5-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/6-0x900.webp",
+                    "height": 1200,
+                    "width": 900,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/6-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/7-0x900.webp",
+                    "height": 1200,
+                    "width": 900,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/7-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/8-0x900.webp",
+                    "height": 1200,
+                    "width": 900,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/8-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/10-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/10-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/9-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/9-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/12-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/12-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/11-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/11-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/16-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/16-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/14-0x900.webp",
+                    "height": 1200,
+                    "width": 900,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/14-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/15-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/15-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/13-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/13-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/18-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/18-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/17-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/17-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/19-0x900.webp",
+                    "height": 1200,
+                    "width": 900,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/19-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/21-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/21-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/22-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/22-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/20-0x900.webp",
+                    "height": 1200,
+                    "width": 900,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/20-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/23-0x900.webp",
+                    "height": 1200,
+                    "width": 900,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/23-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/24-0x900.webp",
+                    "height": 1200,
+                    "width": 900,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/24-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/25-0x900.webp",
+                    "height": 1200,
+                    "width": 900,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/25-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/26-0x900.webp",
+                    "height": 1200,
+                    "width": 900,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/26-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/27-0x900.webp",
+                    "height": 1200,
+                    "width": 900,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/27-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/28-0x900.webp",
+                    "height": 1200,
+                    "width": 900,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/28-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/29-0x900.webp",
+                    "height": 1200,
+                    "width": 900,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/29-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/30-0x900.webp",
+                    "height": 1200,
+                    "width": 900,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/30-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/31-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/31-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/32-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/32-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/33-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/33-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/34-0x900.webp",
+                    "height": 1200,
+                    "width": 900,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/34-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/35-0x900.webp",
+                    "height": 1200,
+                    "width": 900,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/35-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/36-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/36-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/37-0x900.webp",
+                    "height": 1200,
+                    "width": 900,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/37-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/38-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/38-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/39-0x900.webp",
+                    "height": 1200,
+                    "width": 900,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/39-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/40-0x900.webp",
+                    "height": 1200,
+                    "width": 900,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/40-224x168.jpg",
+                    "isModerated": true
+                }
+            ],
+            "title": "Toyota Camry 2020 г.",
+            "creditMonthPay": 352703,
+            "deposit": 4650000,
+            "showMotivation": true,
+            "isTurbo": false,
+            "userId": 922443,
+            "favoritesCount": 135
+        },
+        "averagePriceV2": {
+            "advertCount": 294,
+            "averagePriceCalcButtonTitle": "Как рассчитывается средняя цена?",
+            "currentPrice": "15 500 000 〒",
+            "average": 16216188,
+            "title": "Средняя цена на Kolesa.kz",
+            "averagePrice": "16 216 188 〒",
+            "photoUrl": "https://photos-kl.kcdn.kz/webp/45/45d6b752-c508-492b-ac20-9808b76c300d/3-60x45.jpg",
+            "priceRangeValue": 0.46408150060120318,
+            "priceValueText": "Это авто на <span style=\"font-weight:bold; color:#07B743;\">716 188 〒 (4.4%) дешевле</span> похожих",
+            "name": "Toyota Camry 2020 г.",
+            "averagePriceCalc": {
+                "title": "Средняя цена на Kolesa.kz",
+                "headerText": "Средняя цена рассчитывается на основе сравнения этого объявления с похожими по параметрам:",
+                "footerText": "На среднюю цену не влияют объявления с завышенной и заниженной ценой",
+                "parameters": [
+                    "марка, модель, год выпуска",
+                    "поколение, привод",
+                    "тип и объём двигателя",
+                    "кузов",
+                    "тип коробки передач",
+                    "растаможено ли авто в РК"
+                ]
+            }
+        },
+        "similarAdverts": [
+            {
+                "id": 147390640,
+                "priceText": "17 500 000 ₸",
+                "section": 1,
+                "title": "Toyota Camry 2019 г.",
+                "storageId": "live",
+                "carYear": "2019",
+                "type": "cars",
+                "photo": {
+                    "path": "https://photos-kl.kcdn.kz/webp/50/50b29696-3f94-4f8b-965f-98372a4ccb58/12-224x168.webp",
+                    "isModerated": true
+                }
+            },
+            {
+                "id": 147564617,
+                "priceText": "16 360 000 ₸",
+                "section": 1,
+                "title": "Toyota Camry 2020 г.",
+                "storageId": "live",
+                "carYear": "2020",
+                "type": "cars",
+                "photo": {
+                    "path": "https://photos-kl.kcdn.kz/webp/19/193e522c-e007-4db1-a18f-9840292de204/1-224x168.webp",
+                    "isModerated": true
+                }
+            },
+            {
+                "id": 147267763,
+                "priceText": "16 900 000 ₸",
+                "section": 1,
+                "title": "Toyota Camry 2019 г.",
+                "storageId": "live",
+                "carYear": "2019",
+                "type": "cars",
+                "photo": {
+                    "path": "https://photos-kl.kcdn.kz/webp/fb/fbbe1368-0c19-4927-9385-9831047503cf/3-224x168.webp",
+                    "isModerated": true
+                }
+            },
+            {
+                "id": 144404773,
+                "priceText": "14 900 000 ₸",
+                "section": 1,
+                "title": "Toyota Camry 2018 г.",
+                "storageId": "live",
+                "carYear": "2018",
+                "type": "cars",
+                "photo": {
+                    "path": "https://photos-kl.kcdn.kz/webp/fa/fa286de4-8519-4bee-87b9-97a5ef49fde4/9-224x168.webp",
+                    "isModerated": true
+                }
+            },
+            {
+                "id": 147068323,
+                "priceText": "16 900 000 ₸",
+                "section": 1,
+                "title": "Toyota Camry 2021 г.",
+                "storageId": "live",
+                "carYear": "2021",
+                "type": "cars",
+                "photo": {
+                    "path": "https://photos-kl.kcdn.kz/webp/11/11ff9d68-798a-48d9-ba3e-98272502b22d/3-224x168.webp",
+                    "isModerated": true
+                }
+            },
+            {
+                "id": 147193961,
+                "priceText": "18 000 000 ₸",
+                "section": 1,
+                "title": "Toyota Camry 2021 г.",
+                "storageId": "live",
+                "carYear": "2021",
+                "type": "cars",
+                "photo": {
+                    "path": "https://photos-kl.kcdn.kz/webp/7a/7a8f3f13-4ad7-444f-a2f6-982e1fb64e52/11-224x168.webp",
+                    "isModerated": true
+                }
+            },
+            {
+                "id": 146828751,
+                "priceText": "15 530 000 ₸",
+                "section": 1,
+                "title": "Toyota Camry 2019 г.",
+                "storageId": "live",
+                "carYear": "2019",
+                "type": "cars",
+                "photo": {
+                    "path": "https://photos-kl.kcdn.kz/webp/4f/4ff603ee-0369-42b8-8206-98181364d570/1-224x168.webp",
+                    "isModerated": true
+                }
+            },
+            {
+                "id": 146268226,
+                "priceText": "15 020 000 ₸",
+                "section": 1,
+                "title": "Toyota Camry 2020 г.",
+                "storageId": "live",
+                "carYear": "2020",
+                "type": "cars",
+                "photo": {
+                    "path": "https://photos-kl.kcdn.kz/webp/4c/4c9c1481-07ae-48b8-a0d6-97fc04e37448/14-224x168.webp",
+                    "isModerated": true
+                }
+            },
+            {
+                "id": 147631550,
+                "priceText": "17 500 000 ₸",
+                "section": 1,
+                "title": "Toyota Camry 2019 г.",
+                "storageId": "live",
+                "carYear": "2019",
+                "type": "cars",
+                "photo": {
+                    "path": "https://photos-kl.kcdn.kz/webp/e2/e26d282a-1924-4fbb-990b-9842d86fff10/1-224x168.webp",
+                    "isModerated": true
+                }
+            },
+            {
+                "id": 145791743,
+                "priceText": "16 900 000 ₸",
+                "section": 1,
+                "title": "Toyota Camry 2021 г.",
+                "storageId": "live",
+                "carYear": "2021",
+                "type": "cars",
+                "photo": {
+                    "path": "https://photos-kl.kcdn.kz/webp/88/88b2d324-fe7e-4d88-811d-97e5b727b1ba/5-224x168.webp",
+                    "isModerated": true
+                }
+            }
+        ]
+    },
+    {
+        "spareParts": {
+            "total": 4008,
+            "adverts": [
+                {
+                    "id": 144900850,
+                    "title": "Двигатель QR25de на Ниссан X trail T31",
+                    "price": "500 000 ₸",
+                    "thumbnailUrl": "https://photos-kl.kcdn.kz/webp/2b/2bd9c0bd-738a-420f-826c-97bc57680612/1-120x90.webp"
+                },
+                {
+                    "id": 126109361,
+                    "title": "Двигатель VQ35 vq35de",
+                    "price": "370 000 ₸",
+                    "thumbnailUrl": "https://photos-kl.kcdn.kz/webp/cc/cce46245-3259-49c1-bf34-eef13b674769/1-120x90.webp"
+                },
+                {
+                    "id": 142816524,
+                    "title": "Двигатель MR20, объем 2 л, привезенный из Японии",
+                    "price": "57 000 ₸",
+                    "thumbnailUrl": "https://photos-kl.kcdn.kz/webp/81/8107e224-6474-4cd1-a1c8-975f1fadf65d/1-120x90.webp"
+                },
+                {
+                    "id": 131948156,
+                    "title": "Автомат коробка передач nissan teana j31 2.3",
+                    "price": "130 000 ₸",
+                    "thumbnailUrl": "https://photos-kl.kcdn.kz/webp/f2/f2046e4d-301c-4c9f-b558-4dc4ad3f97ec/1-120x90.webp"
+                },
+                {
+                    "id": 135735490,
+                    "title": "Стартер на Teana J31",
+                    "price": "15 000 ₸",
+                    "thumbnailUrl": "https://photos-kl.kcdn.kz/webp/84/845fc627-e333-4352-91ef-477efd3fa19c/1-120x90.webp"
+                },
+                {
+                    "id": 117987863,
+                    "title": "Амортизаторы WINKOD",
+                    "price": "15 000 ₸",
+                    "thumbnailUrl": "https://photos-kl.kcdn.kz/webp/76/769b4d48-00ad-4ca4-873c-47b2125889a2/1-120x90.webp"
+                },
+                {
+                    "id": 128203911,
+                    "title": "Двигатель Ниссан Алтима 2.5",
+                    "price": "450 500 ₸",
+                    "thumbnailUrl": "https://photos-kl.kcdn.kz/webp/8b/8b281416-35ad-48c3-8e25-0a1d2f6d2f1b/1-120x90.webp"
+                },
+                {
+                    "id": 125623844,
+                    "title": "Автомат коробка передач Ниссан Теана nissan teana 2.3",
+                    "price": "120 000 ₸",
+                    "thumbnailUrl": "https://photos-kl.kcdn.kz/webp/11/1184108f-5d86-480e-88ee-e9c426095c49/1-120x90.webp"
+                },
+                {
+                    "id": 120363646,
+                    "title": "АКПП вариатор автомат VQ35 vq35de раздатка",
+                    "price": "365 000 ₸",
+                    "thumbnailUrl": "https://photos-kl.kcdn.kz/webp/8d/8d021245-5da7-46e4-82a0-b2e89b73bbce/1-120x90.webp"
+                }
+            ]
+        },
+        "sellerAdverts": {
+            "id": 141406878,
+            "sellerId": 129347,
+            "sections": [
+                {
+                    "id": 1,
+                    "label": "Машины",
+                    "categories": [
+                        {
+                            "id": 2,
+                            "label": "Легковые",
+                            "name": "auto.car",
+                            "advertsCount": 1
+                        }
+                    ],
+                    "name": "cars"
+                },
+                {
+                    "id": 2,
+                    "label": "Запчасти",
+                    "categories": [
+                        {
+                            "id": 60,
+                            "label": "Автозапчасти",
+                            "name": "spare.parts",
+                            "advertsCount": 3
+                        }
+                    ],
+                    "name": "zapchasti"
+                }
+            ],
+            "sellerName": "7"
+        },
+        "advert": {
+            "updatedAt": "2023-01-21T03:29:05+06:00",
+            "region": "Усть-Каменогорск",
+            "categoryId": 2,
+            "carYear": 2010,
+            "id": 141406878,
+            "commentsAllowedFor": 0,
+            "storage": "live",
+            "emergencyLabel": "С пробегом",
+            "adsCityTag": "ust-kamenogorsk",
+            "isTradeInPro": false,
+            "listerType": "regular",
+            "parameters": [
+                {
+                    "label": "Город",
+                    "value": "Усть-Каменогорск"
+                },
+                {
+                    "label": "Поколение",
+                    "value": "2008 - 2014 J32"
+                },
+                {
+                    "label": "Кузов",
+                    "value": "седан"
+                },
+                {
+                    "label": "Объем двигателя, л",
+                    "value": "3.5 (бензин)"
+                },
+                {
+                    "label": "Пробег",
+                    "value": "250 000 км"
+                },
+                {
+                    "label": "Коробка передач",
+                    "value": "вариатор"
+                },
+                {
+                    "label": "Привод",
+                    "value": "передний привод"
+                },
+                {
+                    "label": "Руль",
+                    "value": "слева"
+                },
+                {
+                    "label": "Цвет",
+                    "value": "серый"
+                },
+                {
+                    "label": "Растаможен в Казахстане",
+                    "value": "Да"
+                }
+            ],
+            "contactButtons": [
+                {
+                    "color": "#2A81DD",
+                    "textColor": "#FFFFFF",
+                    "type": "send_message",
+                    "position": 0,
+                    "text": "Написать"
+                },
+                {
+                    "color": "#64BD38",
+                    "textColor": "#FFFFFF",
+                    "type": "call",
+                    "position": 1,
+                    "text": "Позвонить"
+                }
+            ],
+            "rejectReasonMessage": "",
+            "autoCarMark": {
+                "id": "66",
+                "value": "Nissan"
+            },
+            "listDescription": "2010 г., Б/у седан, 3.5 л, бензин, КПП вариатор, с пробегом 250 000 км, серый, литые диски, тонировка, панорамная крыша, биксенон, хрустальная оптика, линзованная оптика, противотуманки, кожа, дерево, CD-чейнджер, MP3, ГУР, ABS, SRS, сигнализация, автозапуск, иммобилайзер, бесключевой доступ, полный электропакет, центрозамок, климат-контроль, круиз-контроль, мультируль, подогрев сидений, подогрев задних сидений…",
+            "type": "cars",
+            "viewsCount": 9069,
+            "isUp": false,
+            "isFavorite": false,
+            "hasDescendants": false,
+            "showScammerAlert": true,
+            "autoCarModel": {
+                "id": "75",
+                "value": "Teana"
+            },
+            "descriptionText": "Чистый японец Вентиляция и подогрев всех сидений, память водительского сиденья, оттоманка пассажирского сиденья, люк-панорама. Комфортный Японский седан. Кожаный салон, электропривод передних сидений, штатная аудиомагнитола, климат контроль. Печка ташкент. Шумоизаляция торг только на бензин приходите посмотрите.,. Сигнализация Starline A 93. Масло фильтра свечи все заменили резина новая шипованная 2022 года. Торг. Обмен возможен только с вашей доплатой НА ОБМЕН ЦЕНА 8МЛН. Новый аккумулятор поставили. Все масла и фильтра заменены. С документами полный порядок не в залоге, чистый Каз учет!\nИщете идеальную идите в автосалон машине 12 лет ЦЕНА ОКОНЧАТЕЛЬНО ХАЛЯВЫ НЕТ ЗА 5 НЕ ОТДАМ ДЕНЕГ НЕТ ИЩИ ДРУГУЮ.",
+            "name": "Nissan Teana",
+            "additionalParameters": "литые диски, тонировка, панорамная крыша, биксенон, хрустальная оптика, линзованная оптика, противотуманки, кожа, дерево, CD-чейнджер, MP3, ГУР, ABS, SRS, сигнализация, автозапуск, иммобилайзер, бесключевой доступ, полный электропакет, центрозамок, климат-контроль, круиз-контроль, мультируль, подогрев сидений, подогрев задних сидений, вентиляция сидений, память сидений, память руля, камера заднего вида, датчик света, датчик дождя, техосмотр пройден",
+            "isFast": false,
+            "phoneViewsCount": 0,
+            "isNewAutoPro": false,
+            "status": "live",
+            "rejectReasonId": null,
+            "isHot": true,
+            "advertRun": 250000,
+            "regionAlias": "kz/region-vostochnokazakhstanskaya-oblast/Усть-Каменогорск",
+            "sectionId": 1,
+            "price": 5600000,
+            "isVip": false,
+            "isDealer": false,
+            "isNewAutoCondition": false,
+            "isOrderCallBackButtonVisible": false,
+            "isTorg": false,
+            "addDate": "2023-01-21T23:59:59+06:00",
+            "showTillDate": "2023-01-28T03:29:05+06:00",
+            "photos": [
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/18-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/18-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/15-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/15-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/17-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/17-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/19-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/19-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/16-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/16-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/20-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/20-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/24-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/24-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/21-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/21-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/22-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/22-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/23-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/23-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/25-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/25-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/26-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/26-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/8-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/8-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/7-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/7-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/9-0x900.webp",
+                    "height": 1200,
+                    "width": 674,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/9-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/12-0x900.webp",
+                    "height": 1200,
+                    "width": 674,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/12-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/11-1200x0.webp",
+                    "height": 720,
+                    "width": 1280,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/11-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/14-0x900.webp",
+                    "height": 1200,
+                    "width": 900,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/14-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/29-0x900.webp",
+                    "height": 1200,
+                    "width": 674,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/29-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/30-1200x0.webp",
+                    "height": 899,
+                    "width": 1599,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/30-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/28-0x900.webp",
+                    "height": 1200,
+                    "width": 676,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/28-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/27-0x900.webp",
+                    "height": 1200,
+                    "width": 674,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/27-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/33-0x900.webp",
+                    "height": 1200,
+                    "width": 900,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/33-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/32-0x900.webp",
+                    "height": 1200,
+                    "width": 900,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/32-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/31-0x900.webp",
+                    "height": 1200,
+                    "width": 900,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/31-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/34-0x900.webp",
+                    "height": 1200,
+                    "width": 900,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/34-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/37-0x900.webp",
+                    "height": 1200,
+                    "width": 900,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/37-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/36-0x900.webp",
+                    "height": 1200,
+                    "width": 900,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/36-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/35-0x900.webp",
+                    "height": 1200,
+                    "width": 900,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/35-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/38-0x900.webp",
+                    "height": 1200,
+                    "width": 675,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/38-224x168.jpg",
+                    "isModerated": true
+                }
+            ],
+            "title": "Nissan Teana 2010 г.",
+            "creditMonthPay": 127428,
+            "deposit": 1680000,
+            "showMotivation": true,
+            "isTurbo": false,
+            "userId": 129347,
+            "favoritesCount": 205
+        },
+        "averagePriceV2": {
+            "advertCount": 11,
+            "averagePriceCalcButtonTitle": "Как рассчитывается средняя цена?",
+            "currentPrice": "5 600 000 〒",
+            "average": 6649927,
+            "title": "Средняя цена на Kolesa.kz",
+            "averagePrice": "6 649 927 〒",
+            "photoUrl": "https://photos-kl.kcdn.kz/webp/d4/d4ad0eca-e64e-410f-a450-972017247178/18-60x45.jpg",
+            "priceRangeValue": 0.36272322133981866,
+            "priceValueText": "Это авто на <span style=\"font-weight:bold; color:#07B743;\">1 049 927 〒 (15.8%) дешевле</span> похожих",
+            "name": "Nissan Teana 2010 г.",
+            "averagePriceCalc": {
+                "title": "Средняя цена на Kolesa.kz",
+                "headerText": "Средняя цена рассчитывается на основе сравнения этого объявления с похожими по параметрам:",
+                "footerText": "На среднюю цену не влияют объявления с завышенной и заниженной ценой",
+                "parameters": [
+                    "марка, модель, год выпуска",
+                    "поколение, привод",
+                    "тип и объём двигателя",
+                    "кузов",
+                    "тип коробки передач",
+                    "растаможено ли авто в РК"
+                ]
+            }
+        },
+        "similarAdverts": [
+            {
+                "id": 147618595,
+                "priceText": "5 200 000 ₸",
+                "section": 1,
+                "title": "Nissan Teana 2008 г.",
+                "storageId": "live",
+                "carYear": "2008",
+                "type": "cars",
+                "photo": {
+                    "path": "https://photos-kl.kcdn.kz/webp/64/649e7ff3-0366-4f92-8bae-98427888b702/2-224x168.webp",
+                    "isModerated": true
+                }
+            }
+        ]
+    },
+    {
+        "spareParts": {
+            "total": 5758,
+            "adverts": [
+                {
+                    "id": 146536913,
+                    "title": "Задние фонари БМВ Х5",
+                    "price": "275 000 ₸",
+                    "thumbnailUrl": "https://photos-kl.kcdn.kz/webp/50/50f3099a-0d56-466a-9b03-9808afa763f7/2-120x90.webp"
+                },
+                {
+                    "id": 146571286,
+                    "title": "Ковры в салон бмв BMW",
+                    "price": "30 000 ₸",
+                    "thumbnailUrl": "https://photos-kl.kcdn.kz/webp/04/04a893aa-dca9-41d4-a7b6-980a6f04933d/7-120x90.webp"
+                },
+                {
+                    "id": 129580264,
+                    "title": "Морда ноускат передний часть БМВ Х5 Е70",
+                    "price": "111 000 ₸",
+                    "thumbnailUrl": "https://photos-kl.kcdn.kz/webp/3a/3a6bae76-819b-4644-bd37-58da45c129bb/1-120x90.webp"
+                },
+                {
+                    "id": 127902775,
+                    "title": "Рулевая Рейка",
+                    "price": "7 070 ₸",
+                    "thumbnailUrl": "https://photos-kl.kcdn.kz/webp/b4/b437a699-ac09-4337-bbeb-7a1bb7f219d5/8-120x90.webp"
+                },
+                {
+                    "id": 109836490,
+                    "title": "Рулевая рейка",
+                    "price": "50 000 ₸",
+                    "thumbnailUrl": "https://photos-kl.kcdn.kz/webp/47/47d93807-a1af-4564-8b54-f38e1a165e76/1-120x90.webp"
+                },
+                {
+                    "id": 146437825,
+                    "title": "Рулевая рейка BMW X5 E53 без датчека",
+                    "price": "165 000 ₸",
+                    "thumbnailUrl": "https://photos-kl.kcdn.kz/webp/ca/ca10e19e-1269-459d-a222-98046151a9d7/1-120x90.webp"
+                },
+                {
+                    "id": 147523375,
+                    "title": "Ролик БМВ N55",
+                    "price": "90 000 ₸",
+                    "thumbnailUrl": "https://photos-kl.kcdn.kz/webp/d9/d9f1d154-6a98-4e15-baab-983e492141b2/1-120x90.webp"
+                },
+                {
+                    "id": 137505016,
+                    "title": "Блоки ABS (насосы)",
+                    "price": "50 000 ₸",
+                    "thumbnailUrl": "https://photos-kl.kcdn.kz/webp/9a/9acf729a-2a3e-4454-a17d-967058ba7873/1-120x90.webp"
+                },
+                {
+                    "id": 140402390,
+                    "title": "ПЕРЕДНЯЯ ЧАСТЬ",
+                    "price": "5 000 000 ₸",
+                    "thumbnailUrl": "https://photos-kl.kcdn.kz/webp/2d/2d116340-ffdd-4bdf-91a9-96f267841f6a/1-120x90.webp"
+                }
+            ]
+        },
+        "sellerAdverts": {
+            "id": 147684711,
+            "sellerId": 28083147,
+            "sections": [
+                {
+                    "id": 1,
+                    "label": "Машины",
+                    "categories": [
+                        {
+                            "id": 2,
+                            "label": "Легковые",
+                            "name": "auto.car",
+                            "advertsCount": 2
+                        }
+                    ],
+                    "name": "cars"
+                }
+            ],
+            "sellerName": "id28083147"
+        },
+        "advert": {
+            "updatedAt": "2023-01-21T03:19:35+06:00",
+            "region": "Шымкент",
+            "categoryId": 2,
+            "carYear": 2021,
+            "id": 147684711,
+            "commentsAllowedFor": 0,
+            "storage": "live",
+            "emergencyLabel": "С пробегом",
+            "adsCityTag": "shymkent",
+            "isTradeInPro": false,
+            "listerType": "regular",
+            "parameters": [
+                {
+                    "label": "Город",
+                    "value": "Шымкент"
+                },
+                {
+                    "label": "Поколение",
+                    "value": "2018 - н.в. G05"
+                },
+                {
+                    "label": "Кузов",
+                    "value": "кроссовер"
+                },
+                {
+                    "label": "Объем двигателя, л",
+                    "value": "3 (бензин)"
+                },
+                {
+                    "label": "Коробка передач",
+                    "value": "автомат"
+                },
+                {
+                    "label": "Привод",
+                    "value": "полный привод"
+                },
+                {
+                    "label": "Руль",
+                    "value": "слева"
+                },
+                {
+                    "label": "Цвет",
+                    "value": "черный металлик"
+                },
+                {
+                    "label": "Растаможен в Казахстане",
+                    "value": "Да"
+                }
+            ],
+            "contactButtons": [
+                {
+                    "color": "#2A81DD",
+                    "textColor": "#FFFFFF",
+                    "type": "send_message",
+                    "position": 0,
+                    "text": "Написать"
+                },
+                {
+                    "color": "#64BD38",
+                    "textColor": "#FFFFFF",
+                    "type": "call",
+                    "position": 1,
+                    "text": "Позвонить"
+                }
+            ],
+            "rejectReasonMessage": "",
+            "autoCarMark": {
+                "id": "11",
+                "value": "Bmw"
+            },
+            "listDescription": "2021 г., Б/у кроссовер, 3 л, бензин, КПП автомат, черный, металлик, BMW x5 Xdrive 40i M-пакет -2021 г. В свеже доставлен из Германии. -Без пробега по Казахстану BMW Individual расширенная отделка кожей MERINO черный! -0159 Диски 22 V-образные спицы 7461 -02NH Спортивные тормоза M -О2ТВ Спортивная АКПП -02VF Адаптивная ходовая часть М -0322 Комфортный бесключевой доступ -Камера 3-D на 360 -0402 Панорамная крыша с…",
+            "type": "cars",
+            "viewsCount": 103,
+            "isUp": true,
+            "isFavorite": false,
+            "hasDescendants": false,
+            "showScammerAlert": true,
+            "autoCarModel": {
+                "id": "63",
+                "value": "X5"
+            },
+            "descriptionText": "BMW x5 Xdrive 40i M-пакет\n-2021 г. В свеже доставлен из Германии.\n-Без пробега по Казахстану\nBMW Individual расширенная отделка кожей\nMERINO черный!\n-0159 Диски 22 V-образные спицы 7461\n-02NH Спортивные тормоза M\n-О2ТВ Спортивная АКПП\n-02VF Адаптивная ходовая часть М\n-0322 Комфортный бесключевой доступ\n-Камера 3-D на 360\n-0402 Панорамная крыша с электроприводом\n-0417 Солнцезащитная штора окна двери 3д\n-0456 Передние сиденья повыш. Комфортн. — С памятью положения\n-04FL Система Travel& Comfort\n-04NE Система подогрева Blow-By\n-04UR Сопровождающее освещение салона\n-05AQ Active Guard Plus\n-05AU Driving Assistant\n-05AZ BMW Laserlicht\n-05DN Система парковки Plus\n-0610 Проекционный дисплей на лобовом стекле.\n-0688 Harman/Kardon система объемного звучания\n-06C4 Connected Package Professional\n-06NW Телефония с беспроводной зарядкой\n-06U3 BMW Live кокпит Professional\n-06U8 Система управления жестами BMW\n-06WD WLAN Hotspot\n-0710 Кожаное рулевое колесо в М-стиле\n-0715 Аэродинамический комплект M Technic\n-0760 Shadow-Line с зеркальным блеском\n-0337 Спортивный комплект стиль M\n-ОЗАС Тягово-сцепное устройство\n-0413 Разделительная сетка багажника\n-08TF Активная защита пешеходов\nРассмотрю варианты обмена +/-.",
+            "name": "BMW X5",
+            "phoneViewsCount": 0,
+            "isFast": false,
+            "isNewAutoPro": false,
+            "status": "live",
+            "rejectReasonId": null,
+            "isHot": true,
+            "price": 55000000,
+            "regionAlias": "kz/region-yuzhnokazahstanskaya-oblast/Шымкент",
+            "sectionId": 1,
+            "color": 2,
+            "isVip": true,
+            "isDealer": false,
+            "isNewAutoCondition": false,
+            "isOrderCallBackButtonVisible": false,
+            "isTorg": false,
+            "addDate": "2023-01-21T23:59:59+06:00",
+            "showTillDate": "2023-01-28T23:59:59+06:00",
+            "photos": [
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/1c/1c2cb429-e1b6-4422-acd1-9845451ced73/26-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/1c/1c2cb429-e1b6-4422-acd1-9845451ced73/26-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/1c/1c2cb429-e1b6-4422-acd1-9845451ced73/25-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/1c/1c2cb429-e1b6-4422-acd1-9845451ced73/25-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/1c/1c2cb429-e1b6-4422-acd1-9845451ced73/24-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/1c/1c2cb429-e1b6-4422-acd1-9845451ced73/24-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/1c/1c2cb429-e1b6-4422-acd1-9845451ced73/23-0x900.webp",
+                    "height": 1200,
+                    "width": 900,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/1c/1c2cb429-e1b6-4422-acd1-9845451ced73/23-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "//app.kolesa.kz/static/",
+                    "height": 1080,
+                    "width": 1920,
+                    "thumbnail": "//app.kolesa.kz/static//images/stubs/Moderation_200x150.svg",
+                    "isModerated": false
+                },
+                {
+                    "path": "//app.kolesa.kz/static/",
+                    "height": 1200,
+                    "width": 900,
+                    "thumbnail": "//app.kolesa.kz/static//images/stubs/Moderation_200x150.svg",
+                    "isModerated": false
+                },
+                {
+                    "path": "//app.kolesa.kz/static/",
+                    "height": 1080,
+                    "width": 1920,
+                    "thumbnail": "//app.kolesa.kz/static//images/stubs/Moderation_200x150.svg",
+                    "isModerated": false
+                },
+                {
+                    "path": "//app.kolesa.kz/static/",
+                    "height": 1200,
+                    "width": 900,
+                    "thumbnail": "//app.kolesa.kz/static//images/stubs/Moderation_200x150.svg",
+                    "isModerated": false
+                },
+                {
+                    "path": "//app.kolesa.kz/static/",
+                    "height": 1200,
+                    "width": 900,
+                    "thumbnail": "//app.kolesa.kz/static//images/stubs/Moderation_200x150.svg",
+                    "isModerated": false
+                },
+                {
+                    "path": "//app.kolesa.kz/static/",
+                    "height": 1080,
+                    "width": 1920,
+                    "thumbnail": "//app.kolesa.kz/static//images/stubs/Moderation_200x150.svg",
+                    "isModerated": false
+                },
+                {
+                    "path": "//app.kolesa.kz/static/",
+                    "height": 1200,
+                    "width": 900,
+                    "thumbnail": "//app.kolesa.kz/static//images/stubs/Moderation_200x150.svg",
+                    "isModerated": false
+                },
+                {
+                    "path": "//app.kolesa.kz/static/",
+                    "height": 1080,
+                    "width": 1920,
+                    "thumbnail": "//app.kolesa.kz/static//images/stubs/Moderation_200x150.svg",
+                    "isModerated": false
+                },
+                {
+                    "path": "//app.kolesa.kz/static/",
+                    "height": 1200,
+                    "width": 676,
+                    "thumbnail": "//app.kolesa.kz/static//images/stubs/Moderation_200x150.svg",
+                    "isModerated": false
+                },
+                {
+                    "path": "//app.kolesa.kz/static/",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "//app.kolesa.kz/static//images/stubs/Moderation_200x150.svg",
+                    "isModerated": false
+                }
+            ],
+            "title": "BMW X5 2021 г.",
+            "creditMonthPay": 584021,
+            "deposit": 37000000,
+            "showMotivation": false,
+            "isTurbo": true,
+            "userId": 28083147,
+            "favoritesCount": 2
+        },
+        "averagePriceV2": {
+            "advertCount": 105,
+            "averagePriceCalcButtonTitle": "Как рассчитывается средняя цена?",
+            "currentPrice": "55 000 000 〒",
+            "average": 57515415,
+            "title": "Средняя цена на Kolesa.kz",
+            "averagePrice": "57 515 415 〒",
+            "photoUrl": "https://photos-kl.kcdn.kz/webp/1c/1c2cb429-e1b6-4422-acd1-9845451ced73/26-60x45.jpg",
+            "priceRangeValue": 0.46408150060120318,
+            "priceValueText": "Это авто на <span style=\"font-weight:bold; color:#07B743;\">2 515 415 〒 (4.4%) дешевле</span> похожих",
+            "name": "BMW X5 2021 г.",
+            "averagePriceCalc": {
+                "title": "Средняя цена на Kolesa.kz",
+                "headerText": "Средняя цена рассчитывается на основе сравнения этого объявления с похожими по параметрам:",
+                "footerText": "На среднюю цену не влияют объявления с завышенной и заниженной ценой",
+                "parameters": [
+                    "марка, модель, год выпуска",
+                    "поколение, привод",
+                    "тип и объём двигателя",
+                    "кузов",
+                    "тип коробки передач",
+                    "растаможено ли авто в РК"
+                ]
+            }
+        },
+        "similarAdverts": [
+            {
+                "id": 147549659,
+                "priceText": "65 000 000 ₸",
+                "section": 1,
+                "title": "BMW X5 2022 г.",
+                "storageId": "live",
+                "carYear": "2022",
+                "type": "cars",
+                "photo": {
+                    "path": "https://photos-kl.kcdn.kz/webp/56/563d913f-bd40-4b41-a065-983f08add802/1-224x168.webp",
+                    "isModerated": true
+                }
+            },
+            {
+                "id": 147608112,
+                "priceText": "61 000 000 ₸",
+                "section": 1,
+                "title": "BMW X5 2021 г.",
+                "storageId": "live",
+                "carYear": "2021",
+                "type": "cars",
+                "photo": {
+                    "path": "https://photos-kl.kcdn.kz/webp/88/882cb937-d714-4278-8deb-98421ae92908/2-224x168.webp",
+                    "isModerated": true
+                }
+            }
+        ]
+    },
+    {
+        "advert": {
+            "updatedAt": "2023-01-21T03:12:33+06:00",
+            "region": "Жанаозен",
+            "categoryId": 2,
+            "carYear": 2001,
+            "id": 147690028,
+            "commentsAllowedFor": 0,
+            "storage": "live",
+            "emergencyLabel": "С пробегом",
+            "adsCityTag": "janaozen",
+            "isTradeInPro": false,
+            "listerType": "regular",
+            "parameters": [
+                {
+                    "label": "Город",
+                    "value": "Жанаозен"
+                },
+                {
+                    "label": "Поколение",
+                    "value": "2000 - 2003 XX20"
+                },
+                {
+                    "label": "Кузов",
+                    "value": "седан"
+                },
+                {
+                    "label": "Объем двигателя, л",
+                    "value": "3 (газ-бензин)"
+                },
+                {
+                    "label": "Коробка передач",
+                    "value": "автомат"
+                },
+                {
+                    "label": "Привод",
+                    "value": "полный привод"
+                },
+                {
+                    "label": "Руль",
+                    "value": "слева"
+                },
+                {
+                    "label": "Цвет",
+                    "value": "голубой металлик"
+                },
+                {
+                    "label": "Растаможен в Казахстане",
+                    "value": "Да"
+                }
+            ],
+            "contactButtons": [
+                {
+                    "color": "#2A81DD",
+                    "textColor": "#FFFFFF",
+                    "type": "send_message",
+                    "position": 0,
+                    "text": "Написать"
+                },
+                {
+                    "color": "#64BD38",
+                    "textColor": "#FFFFFF",
+                    "type": "call",
+                    "position": 1,
+                    "text": "Позвонить"
+                }
+            ],
+            "rejectReasonMessage": "",
+            "autoCarMark": {
+                "id": "96",
+                "value": "Toyota"
+            },
+            "listDescription": "2001 г., Б/у седан, 3 л, газ-бензин, КПП автомат, голубой, металлик, литые диски, тонировка, багажник, хрустальная оптика, алькантара, аудиосистема, встроенный телефон, bluetooth, USB, сигнализация, автозапуск, бесключевой доступ, полный электропакет, кондиционер, климат-контроль, мультируль, Көлік на хаду, вложение Қажет етпеиді! Матор привазной, матор жағы 100% идеально. Обмен қарастырамын + доплата менен бола…",
+            "type": "cars",
+            "viewsCount": 173,
+            "isUp": false,
+            "isFavorite": false,
+            "hasDescendants": false,
+            "showScammerAlert": true,
+            "autoCarModel": {
+                "id": "7",
+                "value": "Avalon"
+            },
+            "descriptionText": "Көлік на хаду, вложение Қажет етпеиді!\nМатор привазной, матор жағы 100% идеально.\nОбмен қарастырамын + доплата менен болат.\nЦЕНА ОКОНЧАТЕЛЬНО — 4 түсесіңба деп мазаламауларыңызды сұраймын! Нақты интереспен хабарласыңыздар тек!",
+            "name": "Toyota Avalon",
+            "additionalParameters": "литые диски, тонировка, багажник, хрустальная оптика, алькантара, аудиосистема, встроенный телефон, bluetooth, USB, сигнализация, автозапуск, бесключевой доступ, полный электропакет, кондиционер, климат-контроль, мультируль",
+            "isFast": false,
+            "phoneViewsCount": 0,
+            "isNewAutoPro": false,
+            "status": "live",
+            "rejectReasonId": null,
+            "isHot": true,
+            "price": 4000000,
+            "regionAlias": "kz/region-mangistauskaya-oblast/Жанаозен",
+            "sectionId": 1,
+            "color": 2,
+            "isVip": true,
+            "isDealer": false,
+            "isNewAutoCondition": false,
+            "isOrderCallBackButtonVisible": false,
+            "isTorg": false,
+            "addDate": "2023-01-21T23:59:59+06:00",
+            "showTillDate": "2023-01-28T23:59:59+06:00",
+            "photos": [
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/32/32776774-8343-436f-8171-9845a357afe4/4-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/32/32776774-8343-436f-8171-9845a357afe4/4-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/32/32776774-8343-436f-8171-9845a357afe4/3-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/32/32776774-8343-436f-8171-9845a357afe4/3-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/32/32776774-8343-436f-8171-9845a357afe4/1-0x900.webp",
+                    "height": 1200,
+                    "width": 900,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/32/32776774-8343-436f-8171-9845a357afe4/1-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/32/32776774-8343-436f-8171-9845a357afe4/2-0x900.webp",
+                    "height": 1200,
+                    "width": 900,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/32/32776774-8343-436f-8171-9845a357afe4/2-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/32/32776774-8343-436f-8171-9845a357afe4/5-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/32/32776774-8343-436f-8171-9845a357afe4/5-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/32/32776774-8343-436f-8171-9845a357afe4/6-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/32/32776774-8343-436f-8171-9845a357afe4/6-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/32/32776774-8343-436f-8171-9845a357afe4/7-0x900.webp",
+                    "height": 1200,
+                    "width": 900,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/32/32776774-8343-436f-8171-9845a357afe4/7-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/32/32776774-8343-436f-8171-9845a357afe4/8-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/32/32776774-8343-436f-8171-9845a357afe4/8-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/32/32776774-8343-436f-8171-9845a357afe4/10-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/32/32776774-8343-436f-8171-9845a357afe4/10-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/32/32776774-8343-436f-8171-9845a357afe4/9-0x900.webp",
+                    "height": 1200,
+                    "width": 930,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/32/32776774-8343-436f-8171-9845a357afe4/9-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/32/32776774-8343-436f-8171-9845a357afe4/11-0x900.webp",
+                    "height": 1200,
+                    "width": 900,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/32/32776774-8343-436f-8171-9845a357afe4/11-224x168.jpg",
+                    "isModerated": true
+                }
+            ],
+            "title": "Toyota Avalon 2001 г.",
+            "deposit": 0,
+            "showMotivation": false,
+            "isTurbo": true,
+            "userId": 14078287,
+            "favoritesCount": 2
+        },
+        "spareParts": {
+            "total": 4063,
+            "adverts": [
+                {
+                    "id": 90935462,
+                    "title": "Двигатель на Тойота Камри 30. ДВС и АКПП из Японии",
+                    "price": "120 000 ₸",
+                    "thumbnailUrl": "https://photos-kl.kcdn.kz/webp/12/12af7436-0d38-4016-942b-f4fdc228d35e/2-120x90.webp"
+                },
+                {
+                    "id": 147155523,
+                    "title": "Двигатель Lexus RX 350 2GR — FE 3.5",
+                    "price": "1 100 000 ₸",
+                    "thumbnailUrl": "https://photos-kl.kcdn.kz/webp/61/61646084-8a0b-47d1-b597-982c3c35b261/1-120x90.webp"
+                },
+                {
+                    "id": 133326651,
+                    "title": "Стартеры на Tayota Camry",
+                    "price": "15 000 ₸",
+                    "thumbnailUrl": "https://photos-kl.kcdn.kz/webp/38/38a7290c-fd0a-4073-8fec-0da944dc09d7/1-120x90.webp"
+                },
+                {
+                    "id": 134698007,
+                    "title": "Двигатель на Lexus RX300.1MZ-FE VVTi ДВС и АКПП на Лексус…",
+                    "price": "120 000 ₸",
+                    "thumbnailUrl": "https://photos-kl.kcdn.kz/webp/2f/2f33a0a2-71ae-4fbd-a372-859835bac220/2-120x90.webp"
+                },
+                {
+                    "id": 147626070,
+                    "title": "Двигатель 1MZ-FE (VVT-i), объем 3 л., привезенный из Японии",
+                    "price": "550 000 ₸",
+                    "thumbnailUrl": "https://photos-kl.kcdn.kz/webp/0c/0cee9603-2b9a-4de3-8f65-9842aef34578/1-120x90.webp"
+                },
+                {
+                    "id": 134256543,
+                    "title": "Двигатель на Лексус РХ300. ДВС и АКПП 1MZ-FE VVTi на…",
+                    "price": "85 000 ₸",
+                    "thumbnailUrl": "https://photos-kl.kcdn.kz/webp/7d/7db7e89c-7e08-4b36-a5b3-a02ddbc59c66/1-120x90.webp"
+                },
+                {
+                    "id": 135729671,
+                    "title": "Двигатель на Тойота Камри 2.4л.2AZ-FE VVTi на Toyota Camry",
+                    "price": "95 000 ₸",
+                    "thumbnailUrl": "https://photos-kl.kcdn.kz/webp/45/450645ab-a5ef-4d22-9c86-d550239e2b66/5-120x90.webp"
+                },
+                {
+                    "id": 145843236,
+                    "title": "Двигатель 1mz fe 3.0л four cam",
+                    "price": "570 000 ₸",
+                    "thumbnailUrl": "https://photos-kl.kcdn.kz/webp/e0/e077e6a2-6ddc-4471-9e60-97e7f82cf57b/1-120x90.webp"
+                },
+                {
+                    "id": 142075191,
+                    "title": "Двигатель 1MZ-FE (VVT-i), объем 3 л., привезенный из Японии",
+                    "price": "99 000 ₸",
+                    "thumbnailUrl": "https://photos-kl.kcdn.kz/webp/b9/b97083d6-9b0a-48da-bd57-973ec8af59e2/1-120x90.webp"
+                }
+            ]
+        }
+    },
+    {
+        "spareParts": {
+            "total": 443,
+            "adverts": [
+                {
+                    "id": 147687886,
+                    "title": "Задний бампер на Mercedes G63 2022г",
+                    "price": "800 000 ₸"
+                },
+                {
+                    "id": 145192133,
+                    "title": "Глушитель G 63",
+                    "price": "1 050 000 ₸",
+                    "thumbnailUrl": "https://photos-kl.kcdn.kz/webp/8a/8a686408-5999-45c7-b14d-97c9a5d5e1c9/1-120x90.webp"
+                },
+                {
+                    "id": 147687815,
+                    "title": "Передний бампер Mercedes G63",
+                    "price": "950 000 ₸",
+                    "thumbnailUrl": "https://photos-kl.kcdn.kz/webp/9a/9a2ec0e5-89a2-4218-96fd-98456c727142/1-120x90.webp"
+                },
+                {
+                    "id": 147687951,
+                    "title": "Расширители арок на Mercedes G63 2022г",
+                    "price": "500 000 ₸"
+                },
+                {
+                    "id": 147687683,
+                    "title": "Колпак запасного колеса Mercedes G63",
+                    "price": "250 000 ₸",
+                    "thumbnailUrl": "https://photos-kl.kcdn.kz/webp/ff/ff12c8cd-4dab-4a45-828f-98456aa38dd2/1-120x90.webp"
+                },
+                {
+                    "id": 139011915,
+                    "title": "Подушки двигателя на W463",
+                    "price": "90 500 ₸",
+                    "thumbnailUrl": "https://photos-kl.kcdn.kz/webp/3a/3a0e06b4-6b17-432a-bacf-96b2885449fd/1-120x90.webp"
+                },
+                {
+                    "id": 106806273,
+                    "title": "Щиток приборов от мерседес SL63AMG",
+                    "price": "300 ₸",
+                    "thumbnailUrl": "https://photos-kl.kcdn.kz/webp/a3/a3c38731-9ea3-4877-a36a-bf8b7b79aa74/1-120x90.webp"
+                },
+                {
+                    "id": 147603203,
+                    "title": "Рулевая рейка",
+                    "price": "700 000 ₸",
+                    "thumbnailUrl": "https://photos-kl.kcdn.kz/webp/13/13c2554b-9f8d-443c-b810-98415670e790/1-120x90.webp"
+                },
+                {
+                    "id": 144120360,
+                    "title": "Дефлекторы климата с подсветкой ambient light MB G-KLASS W464",
+                    "price": "265 000 ₸",
+                    "thumbnailUrl": "https://photos-kl.kcdn.kz/webp/dd/dd0e8beb-42e1-4a67-a138-9799a5a79dee/2-120x90.webp"
+                }
+            ]
+        },
+        "sellerAdverts": {
+            "id": 146739068,
+            "sellerId": 111996,
+            "sections": [
+                {
+                    "id": 1,
+                    "label": "Машины",
+                    "categories": [
+                        {
+                            "id": 2,
+                            "label": "Легковые",
+                            "name": "auto.car",
+                            "advertsCount": 3
+                        }
+                    ],
+                    "name": "cars"
+                }
+            ],
+            "sellerName": "505"
+        },
+        "advert": {
+            "updatedAt": "2023-01-21T03:12:32+06:00",
+            "region": "Алматы",
+            "categoryId": 2,
+            "carYear": 2013,
+            "id": 146739068,
+            "commentsAllowedFor": 0,
+            "storage": "live",
+            "emergencyLabel": "С пробегом",
+            "adsCityTag": "almaty",
+            "isTradeInPro": false,
+            "listerType": "regular",
+            "parameters": [
+                {
+                    "label": "Город",
+                    "value": "Алматы"
+                },
+                {
+                    "label": "Поколение",
+                    "value": "2012 - 2015 W463 [2-й рестайлинг]"
+                },
+                {
+                    "label": "Кузов",
+                    "value": "внедорожник"
+                },
+                {
+                    "label": "Объем двигателя, л",
+                    "value": "5.5 (бензин)"
+                },
+                {
+                    "label": "Пробег",
+                    "value": "100 000 км"
+                },
+                {
+                    "label": "Коробка передач",
+                    "value": "автомат"
+                },
+                {
+                    "label": "Привод",
+                    "value": "полный привод"
+                },
+                {
+                    "label": "Руль",
+                    "value": "слева"
+                },
+                {
+                    "label": "Цвет",
+                    "value": "черный"
+                },
+                {
+                    "label": "Растаможен в Казахстане",
+                    "value": "Да"
+                }
+            ],
+            "contactButtons": [
+                {
+                    "color": "#2A81DD",
+                    "textColor": "#FFFFFF",
+                    "type": "send_message",
+                    "position": 0,
+                    "text": "Написать"
+                },
+                {
+                    "color": "#64BD38",
+                    "textColor": "#FFFFFF",
+                    "type": "call",
+                    "position": 1,
+                    "text": "Позвонить"
+                }
+            ],
+            "rejectReasonMessage": "",
+            "autoCarMark": {
+                "id": "62",
+                "value": "Mercedes-benz"
+            },
+            "listDescription": "2013 г., Б/у внедорожник, 5.5 л, бензин, КПП автомат, с пробегом 100 000 км, черный, Машина в очень хорошем состоянии. Салон как новый. Не бит не крашен 100% Два ключа. + летняя резина. Автомобиль в идеальном состоянии!",
+            "type": "cars",
+            "viewsCount": 3729,
+            "isUp": false,
+            "isFavorite": false,
+            "hasDescendants": false,
+            "showScammerAlert": true,
+            "autoCarModel": {
+                "id": "208",
+                "value": "G-63-amg"
+            },
+            "descriptionText": "Машина в очень хорошем состоянии.\nСалон как новый.\nНе бит не крашен 100%\nДва ключа.\n+ летняя резина.\nАвтомобиль в идеальном состоянии!",
+            "name": "Mercedes-Benz G 63 AMG",
+            "phoneViewsCount": 0,
+            "isFast": false,
+            "isNewAutoPro": false,
+            "status": "live",
+            "rejectReasonId": null,
+            "isHot": true,
+            "advertRun": 100000,
+            "regionAlias": "kz/region-almatinskaya-oblast/Алматы",
+            "sectionId": 1,
+            "price": 43000000,
+            "isVip": false,
+            "isDealer": false,
+            "isNewAutoCondition": false,
+            "isOrderCallBackButtonVisible": false,
+            "isTorg": false,
+            "addDate": "2023-01-21T23:59:59+06:00",
+            "showTillDate": "2023-01-28T03:12:32+06:00",
+            "photos": [
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/e7/e74e8317-1bd5-42e6-9eca-98130156711b/39-1200x0.webp",
+                    "height": 1200,
+                    "width": 1612,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/e7/e74e8317-1bd5-42e6-9eca-98130156711b/39-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/e7/e74e8317-1bd5-42e6-9eca-98130156711b/41-1200x0.webp",
+                    "height": 1200,
+                    "width": 1792,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/e7/e74e8317-1bd5-42e6-9eca-98130156711b/41-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/e7/e74e8317-1bd5-42e6-9eca-98130156711b/40-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/e7/e74e8317-1bd5-42e6-9eca-98130156711b/40-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/e7/e74e8317-1bd5-42e6-9eca-98130156711b/46-1200x0.webp",
+                    "height": 1200,
+                    "width": 1704,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/e7/e74e8317-1bd5-42e6-9eca-98130156711b/46-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/e7/e74e8317-1bd5-42e6-9eca-98130156711b/43-1200x0.webp",
+                    "height": 1030,
+                    "width": 1920,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/e7/e74e8317-1bd5-42e6-9eca-98130156711b/43-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/e7/e74e8317-1bd5-42e6-9eca-98130156711b/44-1200x0.webp",
+                    "height": 1200,
+                    "width": 1519,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/e7/e74e8317-1bd5-42e6-9eca-98130156711b/44-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/e7/e74e8317-1bd5-42e6-9eca-98130156711b/45-1200x0.webp",
+                    "height": 1200,
+                    "width": 1309,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/e7/e74e8317-1bd5-42e6-9eca-98130156711b/45-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/e7/e74e8317-1bd5-42e6-9eca-98130156711b/47-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/e7/e74e8317-1bd5-42e6-9eca-98130156711b/47-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/e7/e74e8317-1bd5-42e6-9eca-98130156711b/49-1200x0.webp",
+                    "height": 1200,
+                    "width": 1920,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/e7/e74e8317-1bd5-42e6-9eca-98130156711b/49-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/e7/e74e8317-1bd5-42e6-9eca-98130156711b/48-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/e7/e74e8317-1bd5-42e6-9eca-98130156711b/48-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/e7/e74e8317-1bd5-42e6-9eca-98130156711b/50-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/e7/e74e8317-1bd5-42e6-9eca-98130156711b/50-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/e7/e74e8317-1bd5-42e6-9eca-98130156711b/51-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/e7/e74e8317-1bd5-42e6-9eca-98130156711b/51-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/e7/e74e8317-1bd5-42e6-9eca-98130156711b/52-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/e7/e74e8317-1bd5-42e6-9eca-98130156711b/52-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/e7/e74e8317-1bd5-42e6-9eca-98130156711b/53-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/e7/e74e8317-1bd5-42e6-9eca-98130156711b/53-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/e7/e74e8317-1bd5-42e6-9eca-98130156711b/54-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/e7/e74e8317-1bd5-42e6-9eca-98130156711b/54-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/e7/e74e8317-1bd5-42e6-9eca-98130156711b/56-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/e7/e74e8317-1bd5-42e6-9eca-98130156711b/56-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/e7/e74e8317-1bd5-42e6-9eca-98130156711b/57-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/e7/e74e8317-1bd5-42e6-9eca-98130156711b/57-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/e7/e74e8317-1bd5-42e6-9eca-98130156711b/58-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/e7/e74e8317-1bd5-42e6-9eca-98130156711b/58-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/e7/e74e8317-1bd5-42e6-9eca-98130156711b/59-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/e7/e74e8317-1bd5-42e6-9eca-98130156711b/59-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/e7/e74e8317-1bd5-42e6-9eca-98130156711b/60-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/e7/e74e8317-1bd5-42e6-9eca-98130156711b/60-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/e7/e74e8317-1bd5-42e6-9eca-98130156711b/61-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/e7/e74e8317-1bd5-42e6-9eca-98130156711b/61-224x168.jpg",
+                    "isModerated": true
+                },
+                {
+                    "path": "https://photos-kl.kcdn.kz/webp/e7/e74e8317-1bd5-42e6-9eca-98130156711b/62-1200x0.webp",
+                    "height": 1200,
+                    "width": 1600,
+                    "thumbnail": "https://photos-kl.kcdn.kz/webp/e7/e74e8317-1bd5-42e6-9eca-98130156711b/62-224x168.jpg",
+                    "isModerated": true
+                }
+            ],
+            "title": "Mercedes-Benz G 63 AMG 2013 г.",
+            "creditMonthPay": 57330,
+            "deposit": 41500000,
+            "showMotivation": true,
+            "isTurbo": false,
+            "userId": 111996,
+            "favoritesCount": 50
+        },
+        "averagePriceV2": {
+            "advertCount": 24,
+            "averagePriceCalcButtonTitle": "Как рассчитывается средняя цена?",
+            "currentPrice": "43 000 000 〒",
+            "average": 37637500,
+            "title": "Средняя цена на Kolesa.kz",
+            "averagePrice": "37 637 500 〒",
+            "photoUrl": "https://photos-kl.kcdn.kz/webp/e7/e74e8317-1bd5-42e6-9eca-98130156711b/39-60x45.jpg",
+            "priceRangeValue": 0.60599061001403576,
+            "priceValueText": "Это авто на <span style=\"font-weight:bold; color:#ff3333\">5 362 500 〒 (14.2%) дороже</span> похожих",
+            "name": "Mercedes-Benz G 63 AMG 2013 г.",
+            "averagePriceCalc": {
+                "title": "Средняя цена на Kolesa.kz",
+                "headerText": "Средняя цена рассчитывается на основе сравнения этого объявления с похожими по параметрам:",
+                "footerText": "На среднюю цену не влияют объявления с завышенной и заниженной ценой",
+                "parameters": [
+                    "марка, модель, год выпуска",
+                    "поколение, привод",
+                    "тип и объём двигателя",
+                    "кузов",
+                    "тип коробки передач",
+                    "растаможено ли авто в РК"
+                ]
+            }
+        },
+        "similarAdverts": [
+            {
+                "id": 141821879,
+                "priceText": "42 500 000 ₸",
+                "section": 1,
+                "title": "Mercedes-Benz G 63 AMG 2013 г.",
+                "storageId": "live",
+                "carYear": "2013",
+                "type": "cars",
+                "photo": {
+                    "path": "https://photos-kl.kcdn.kz/webp/2e/2e591def-5522-402c-8a65-9732f90cad26/39-224x168.webp",
+                    "isModerated": true
+                }
+            },
+            {
+                "id": 141771605,
+                "priceText": "52 000 000 ₸",
+                "section": 1,
+                "title": "Mercedes-Benz G 63 AMG 2015 г.",
+                "storageId": "live",
+                "carYear": "2015",
+                "type": "cars",
+                "photo": {
+                    "path": "https://photos-kl.kcdn.kz/webp/47/47f53acf-dab8-470d-b2e6-9730e77fd569/21-224x168.webp",
+                    "isModerated": true
+                }
+            },
+            {
+                "id": 146628558,
+                "priceText": "40 100 000 ₸",
+                "section": 1,
+                "title": "Mercedes-Benz G 63 AMG 2014 г.",
+                "storageId": "live",
+                "carYear": "2014",
+                "type": "cars",
+                "photo": {
+                    "path": "https://photos-kl.kcdn.kz/webp/b8/b8046fbd-0022-4963-9615-980d7224acb8/4-224x168.webp",
+                    "isModerated": true
+                }
+            },
+            {
+                "id": 146572526,
+                "priceText": "40 000 000 ₸",
+                "section": 1,
+                "title": "Mercedes-Benz G 63 AMG 2014 г.",
+                "storageId": "live",
+                "carYear": "2014",
+                "type": "cars",
+                "photo": {
+                    "path": "https://photos-kl.kcdn.kz/webp/e5/e5547652-62e2-4796-b755-980a789f9a1c/2-224x168.webp",
+                    "isModerated": true
+                }
+            },
+            {
+                "id": 147417643,
+                "priceText": "36 000 000 ₸",
+                "section": 1,
+                "title": "Mercedes-Benz G 63 AMG 2012 г.",
+                "storageId": "live",
+                "carYear": "2012",
+                "type": "cars",
+                "photo": {
+                    "path": "https://photos-kl.kcdn.kz/webp/1f/1f0db858-6dff-40f1-999b-9838d3faca70/1-224x168.webp",
+                    "isModerated": true
+                }
+            },
+            {
+                "id": 147681766,
+                "priceText": "38 900 000 ₸",
+                "section": 1,
+                "title": "Mercedes-Benz G 63 AMG 2012 г.",
+                "storageId": "live",
+                "carYear": "2012",
+                "type": "cars",
+                "photo": {
+                    "path": "https://photos-kl.kcdn.kz/webp/df/df73653b-0047-4e06-8f79-9845272ec386/2-224x168.webp",
+                    "isModerated": true
+                }
+            },
+            {
+                "id": 147188028,
+                "priceText": "45 000 000 ₸",
+                "section": 1,
+                "title": "Mercedes-Benz G 63 AMG 2014 г.",
+                "storageId": "live",
+                "carYear": "2014",
+                "type": "cars",
+                "photo": {
+                    "path": "https://photos-kl.kcdn.kz/webp/fa/fa170cce-c9b3-4eeb-bfca-982d5c7ae233/4-224x168.webp",
+                    "isModerated": true
+                }
+            },
+            {
+                "id": 147106627,
+                "priceText": "46 000 000 ₸",
+                "section": 1,
+                "title": "Mercedes-Benz G 63 AMG 2013 г.",
+                "storageId": "live",
+                "carYear": "2013",
+                "type": "cars",
+                "photo": {
+                    "path": "https://photos-kl.kcdn.kz/webp/fe/fe6dd0a2-f880-4d03-849a-982919d5f5eb/2-224x168.webp",
+                    "isModerated": true
+                }
+            },
+            {
+                "id": 146619787,
+                "priceText": "49 000 000 ₸",
+                "section": 1,
+                "title": "Mercedes-Benz G 63 AMG 2015 г.",
+                "storageId": "live",
+                "carYear": "2015",
+                "type": "cars",
+                "photo": {
+                    "path": "https://photos-kl.kcdn.kz/webp/ef/ef722bbe-033a-47c5-ac55-980ccb4bd132/3-224x168.webp",
+                    "isModerated": true
+                }
+            },
+            {
+                "id": 147183534,
+                "priceText": "35 000 000 ₸",
+                "section": 1,
+                "title": "Mercedes-Benz G 63 AMG 2012 г.",
+                "storageId": "live",
+                "carYear": "2012",
+                "type": "cars",
+                "photo": {
+                    "path": "https://photos-kl.kcdn.kz/webp/54/549c2791-f29e-493d-92a5-982d233f3082/9-224x168.webp",
+                    "isModerated": true
+                }
+            }
+        ]
+    }
+]
+
