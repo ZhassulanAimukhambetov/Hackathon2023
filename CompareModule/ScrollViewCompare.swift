@@ -79,15 +79,50 @@ extension ScrollViewCompare {
 }
 
 
+struct Model {
+    let parameters: [[String: String]]
+    
+    
+    enum Constants {
+        static let name = "label"
+        static let value = "value"
+    }
+}
+
+extension Model: ComparableAdvert {
+    var advertParameters: [String] {
+        parameters.map { $0[Constants.value] ?? " - " }
+    }
+    
+    
+}
+
 protocol ComparableAdvert {
-    var parameters: [String] { get }
+    var advertParameters: [String] { get }
 }
 
 
 final class Advert: ComparableAdvert {
-    let parameters: [String]
+    let advertParameters: [String]
     
     init(_ parameters: [String?]) {
-        self.parameters = parameters.map { $0 ?? " - "}
+        self.advertParameters = parameters.map { $0 ?? " - "}
+    }
+}
+
+
+extension Array where Element == Model {
+    var headers: [String] {
+        let x = map { $0.parameters }
+        var indexX = 0
+        var count = 0
+        x.enumerated().forEach { index, parameters in
+            if count < parameters.count {
+                count = parameters.count
+                indexX = index
+            }
+        }
+        
+        return x[indexX].compactMap { $0[Element.Constants.name] }
     }
 }

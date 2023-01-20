@@ -24,7 +24,7 @@ enum ComparableViewBuilder {
             y = y + headerHeight + spaicing
             yArray.append(y)
             adverts.forEach { advert in
-                label.text = advert.parameters[index]
+                label.text = advert.advertParameters[index]
                 label.sizeToFit()
                 height = max(height, label.frame.height)
             }
@@ -92,13 +92,13 @@ enum ComparableViewBuilder {
                                           yArr: [CGFloat]) -> UIView {
         let containerView = UIView()
         var lastHeigt: CGFloat = 0.0
-        advert.parameters.enumerated().forEach { (index, parameter) in
+        advert.advertParameters.enumerated().forEach { (index, parameter) in
             let size = CGSize(width: width - spacing, height: 0)
             let label = UILabel(frame: .init(origin: .init(x: spacing, y: yArr[index]), size: size))
             label.text = parameter
             label.numberOfLines = 0
             label.sizeToFit()
-            if index == advert.parameters.count - 1 {
+            if index == advert.advertParameters.count - 1 {
                 label.backgroundColor = .brown
             }
             containerView.addSubview(label)
