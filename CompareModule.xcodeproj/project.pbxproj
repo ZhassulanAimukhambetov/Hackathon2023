@@ -13,6 +13,7 @@
 		A203FCC3297A873400F8EB12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A203FCC2297A873400F8EB12 /* ViewController.swift */; };
 		A203FCC8297A873400F8EB12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A203FCC7297A873400F8EB12 /* Assets.xcassets */; };
 		A203FCCB297A873400F8EB12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A203FCC9297A873400F8EB12 /* LaunchScreen.storyboard */; };
+		A203FCD3297AECB700F8EB12 /* ScrollViewCompare.swift in Sources */ = {isa = PBXBuildFile; fileRef = A203FCD2297AECB700F8EB12 /* ScrollViewCompare.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		A203FCC7297A873400F8EB12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A203FCCA297A873400F8EB12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A203FCCC297A873400F8EB12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A203FCD2297AECB700F8EB12 /* ScrollViewCompare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewCompare.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				A203FCC7297A873400F8EB12 /* Assets.xcassets */,
 				A203FCC9297A873400F8EB12 /* LaunchScreen.storyboard */,
 				A203FCCC297A873400F8EB12 /* Info.plist */,
+				A203FCD2297AECB700F8EB12 /* ScrollViewCompare.swift */,
 			);
 			path = CompareModule;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 				A203FCC3297A873400F8EB12 /* ViewController.swift in Sources */,
 				A203FCBF297A873400F8EB12 /* AppDelegate.swift in Sources */,
 				A203FCC1297A873400F8EB12 /* SceneDelegate.swift in Sources */,
+				A203FCD3297AECB700F8EB12 /* ScrollViewCompare.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
