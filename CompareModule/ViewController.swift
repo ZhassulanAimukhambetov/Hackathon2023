@@ -15,6 +15,9 @@ enum Section: Int, CaseIterable {
     case fourth
     case fivth
     case sixth
+    case seven
+    case eight
+    case nine
     
     var columnCount: Int {
               switch self {
@@ -29,6 +32,12 @@ enum Section: Int, CaseIterable {
               case .fivth:
                   return 10
               case .sixth:
+                  return 10
+              case .seven:
+                  return 10
+              case .eight:
+                  return 10
+              case .nine:
                   return 10
               }
           }
@@ -58,6 +67,16 @@ final class ViewController: UIViewController {
         
         view.backgroundColor = .white
         
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        for i in (0..<collectionView.numberOfSections) {
+            let sv = collectionView.getScrollViewFromCompositionLayout(section: i)
+            print("\(i)  - \(sv)")
+            scrollViewsForIndex[i] = collectionView.getScrollViewFromCompositionLayout(section: i)
+        }
     }
     
     private func createDataSource() {
@@ -102,47 +121,19 @@ final class ViewController: UIViewController {
                 
                 
                 guard let iPath = visibleItems.first?.indexPath.section else { return }
-                
-                let scrollView0 = self!.collectionView.getScrollViewFromCompositionLayout(section: 0)
-                let scrollView1 = self!.collectionView.getScrollViewFromCompositionLayout(section: 1)
-                let scrollView2 = self!.collectionView.getScrollViewFromCompositionLayout(section: 2)
-                let scrollView3 = self!.collectionView.getScrollViewFromCompositionLayout(section: 3)
-                let scrollView4 = self!.collectionView.getScrollViewFromCompositionLayout(section: 4)
-                let scrollView5 = self!.collectionView.getScrollViewFromCompositionLayout(section: 5)
-                
-                if let scrollView0, let scrollView1, let scrollView2, let scrollView3 {
-                    self!.scrollViewsForIndex[0] = scrollView0
-                    self!.scrollViewsForIndex[1] = scrollView1
-                    self!.scrollViewsForIndex[2] = scrollView2
-                    self!.scrollViewsForIndex[3] = scrollView3
-                    self!.scrollViewsForIndex[4] = scrollView4!
-                    self!.scrollViewsForIndex[5] = scrollView5!
-                    
-                }
-                print("0 ", self!.scrollViewsForIndex[0]?.contentOffset.x)
-                print("1 ", self!.scrollViewsForIndex[1]?.contentOffset.x)
-                print("2 ", self!.scrollViewsForIndex[2]?.contentOffset.x)
-                print("3 ", self!.scrollViewsForIndex[3]?.contentOffset.x)
-                
+                                
                 // Проверяем что бы секция 1 не двигала сама себя
                 if iPath == 1 || iPath == 2 || iPath == 3 || iPath == 4 || iPath == 5 {
                     return
                 }
                 
-                
-                print("second SV - \(scrollView1?.contentOffset)")
-                DispatchQueue.main.async {
-                    self!.xContentOffset = self!.xContentOffset + 1
-                    self!.scrollViewsForIndex[1]?.setContentOffset(.init(x: point.x, y: 160.0), animated: false)
-                    self!.scrollViewsForIndex[2]?.setContentOffset(.init(x: point.x, y: 300.0), animated: false)
-                    self!.scrollViewsForIndex[3]?.setContentOffset(.init(x: point.x, y: 440.0), animated: false)
-                    self!.scrollViewsForIndex[4]?.setContentOffset(.init(x: point.x, y: 580.0), animated: false)
-                    self!.scrollViewsForIndex[5]?.setContentOffset(.init(x: point.x, y: 720.0), animated: false)
-//                    scrollView?.contentOffset = .init(x: point.x, y: 160.0)//.init(x: point.x, y: scrollView!.contentOffset.y)
-//                    scrollView?.setContentOffset(.init(x: point.x, y: scrollView!.contentOffset.y), animated: false)
+
+                for i in (0..<scrollViewsForIndex.keys.count) {
+                    if i == 0 { continue }
+                    
+                    let yPosition: CGFloat = CGFloat(i) * 140.0 + 20
+                    scrollViewsForIndex[i]?.setContentOffset(.init(x: point.x, y: yPosition), animated: false)
                 }
-                print(point)
-                
             }
             
             return section
