@@ -13,6 +13,8 @@ enum Section: Int, CaseIterable {
     case second
     case third
     case fourth
+    case fivth
+    case sixth
     
     var columnCount: Int {
               switch self {
@@ -24,11 +26,19 @@ enum Section: Int, CaseIterable {
                   return 9
               case .fourth:
                   return 11
+              case .fivth:
+                  return 10
+              case .sixth:
+                  return 10
               }
           }
 }
 
 final class ViewController: UIViewController {
+    
+    private var scrollViewsForIndex: [Int: UIScrollView] = [:]
+    
+    var xContentOffset: CGFloat = 0
     
     private var dataSource: UICollectionViewDiffableDataSource<Section, Int>! = nil
     private lazy var collectionView: UICollectionView = {
@@ -43,9 +53,10 @@ final class ViewController: UIViewController {
         
         view.addSubview(collectionView)
         collectionView.delegate = self
-        collectionView.register(SectionHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: SectionHeader.reuseIdentifier)
         
         createDataSource()
+        
+        view.backgroundColor = .white
         
     }
     
@@ -59,11 +70,6 @@ final class ViewController: UIViewController {
             
             return cell
         })
-        
-        dataSource.supplementaryViewProvider = { [unowned self] collectionView, kind, indexPath in
-            return self.supplementary(collectionView: collectionView, kind: kind, indexPath: indexPath)
-        }
-
         
         let itemsPerSection = 6
         var snapshot = NSDiffableDataSourceSnapshot<Section, Int>()
@@ -81,22 +87,60 @@ final class ViewController: UIViewController {
     private func createLayout() -> UICollectionViewCompositionalLayout {
         let layout2 = UICollectionViewCompositionalLayout { [unowned self] (sectionIndex, layoutEnvironment) -> NSCollectionLayoutSection? in
 
-//            guard let sectionInfo = Section(rawValue: sectionIndex) else { return nil }
-//
-//            let cellCount = sectionInfo.columnCount
-            let headerSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .estimated(44))
-            let headerElement = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: headerSize, elementKind: UICollectionView.elementKindSectionHeader, alignment: .top)
+            guard let sectionInfo = Section(rawValue: sectionIndex) else { return nil }
 
-            // this activates the "sticky" behavior
-            headerElement.pinToVisibleBounds = true
+            let cellCount = sectionInfo.columnCount
+
             let group = createGroup(item: createItem(), count: 1)
             let section = createSection(group: group)
-            section.boundarySupplementaryItems = [headerElement]
-            section.contentInsets = .init(top: 20, leading: 20, bottom: 20, trailing: 20)
+        
+            section.contentInsets = .init(top: 20, leading: 0, bottom: 20, trailing: 0)
             section.orthogonalScrollingBehavior = .continuous
             
             section.visibleItemsInvalidationHandler = {  [weak self] visibleItems, point, environment in
+                let comLayout = self!.collectionView.collectionViewLayout as? UICollectionViewCompositionalLayout
                 
+                
+                guard let iPath = visibleItems.first?.indexPath.section else { return }
+                
+                let scrollView0 = self!.collectionView.getScrollViewFromCompositionLayout(section: 0)
+                let scrollView1 = self!.collectionView.getScrollViewFromCompositionLayout(section: 1)
+                let scrollView2 = self!.collectionView.getScrollViewFromCompositionLayout(section: 2)
+                let scrollView3 = self!.collectionView.getScrollViewFromCompositionLayout(section: 3)
+                let scrollView4 = self!.collectionView.getScrollViewFromCompositionLayout(section: 4)
+                let scrollView5 = self!.collectionView.getScrollViewFromCompositionLayout(section: 5)
+                
+                if let scrollView0, let scrollView1, let scrollView2, let scrollView3 {
+                    self!.scrollViewsForIndex[0] = scrollView0
+                    self!.scrollViewsForIndex[1] = scrollView1
+                    self!.scrollViewsForIndex[2] = scrollView2
+                    self!.scrollViewsForIndex[3] = scrollView3
+                    self!.scrollViewsForIndex[4] = scrollView4!
+                    self!.scrollViewsForIndex[5] = scrollView5!
+                    
+                }
+                print("0 ", self!.scrollViewsForIndex[0]?.contentOffset.x)
+                print("1 ", self!.scrollViewsForIndex[1]?.contentOffset.x)
+                print("2 ", self!.scrollViewsForIndex[2]?.contentOffset.x)
+                print("3 ", self!.scrollViewsForIndex[3]?.contentOffset.x)
+                
+                // Проверяем что бы секция 1 не двигала сама себя
+                if iPath == 1 || iPath == 2 || iPath == 3 || iPath == 4 || iPath == 5 {
+                    return
+                }
+                
+                
+                print("second SV - \(scrollView1?.contentOffset)")
+                DispatchQueue.main.async {
+                    self!.xContentOffset = self!.xContentOffset + 1
+                    self!.scrollViewsForIndex[1]?.setContentOffset(.init(x: point.x, y: 160.0), animated: false)
+                    self!.scrollViewsForIndex[2]?.setContentOffset(.init(x: point.x, y: 300.0), animated: false)
+                    self!.scrollViewsForIndex[3]?.setContentOffset(.init(x: point.x, y: 440.0), animated: false)
+                    self!.scrollViewsForIndex[4]?.setContentOffset(.init(x: point.x, y: 580.0), animated: false)
+                    self!.scrollViewsForIndex[5]?.setContentOffset(.init(x: point.x, y: 720.0), animated: false)
+//                    scrollView?.contentOffset = .init(x: point.x, y: 160.0)//.init(x: point.x, y: scrollView!.contentOffset.y)
+//                    scrollView?.setContentOffset(.init(x: point.x, y: scrollView!.contentOffset.y), animated: false)
+                }
                 print(point)
                 
             }
@@ -107,13 +151,6 @@ final class ViewController: UIViewController {
         return layout2
     }
     
-    func supplementary(collectionView: UICollectionView, kind: String, indexPath: IndexPath) -> UICollectionReusableView? {
-        let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: SectionHeader.reuseIdentifier, for: indexPath) as! SectionHeader
-
-        //header.configure(with: "Sticky header \(indexPath.section + 1)")
-
-        return header
-    }
     
     private func createSection(group: NSCollectionLayoutGroup) -> NSCollectionLayoutSection {
         NSCollectionLayoutSection(group: group)
@@ -137,15 +174,7 @@ final class ViewController: UIViewController {
 }
 
 extension ViewController: UICollectionViewDelegate {
-//    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-//
-//        if let sectionHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "SectionHeader", for: indexPath) as? SectionHeader {
-//            sectionHeader.sectionHeaderlabel.text = "Section \(indexPath.section)"
-//            return sectionHeader
-//        }
-//
-//        return UICollectionReusableView()
-//    }
+    
 }
 
 extension ViewController: UIScrollViewDelegate {
@@ -159,20 +188,16 @@ class TestCell: UICollectionViewCell {
 }
 
 
-final class SectionHeader: UICollectionReusableView {
-    static let reuseIdentifier = "SectionHeader"
-    let sectionHeaderlabel = UILabel()
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        sectionHeaderlabel.text = "Parameters"
-        addSubview(sectionHeaderlabel)
-        sectionHeaderlabel.snp.makeConstraints {
-            $0.edges.equalToSuperview().inset(20)
-        }
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+extension UICollectionView {
+    func getScrollViewFromCompositionLayout(section: Int) -> UIScrollView? {
+        return subviews
+            .compactMap { $0 as? UIScrollView }
+            .first(where: { scrollView in
+                guard let cell = scrollView.subviews.first as? UICollectionViewCell else {
+                    return false
+                }
+
+                return indexPath(for: cell)?.section == section
+            })
     }
 }
