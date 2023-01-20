@@ -1,5 +1,5 @@
 //
-//  ScrollViewCompare.swift
+//  ComparableContainerViewController.swift
 //  CompareModule
 //
 //  Created by Nikolai Salmin on 20.01.2023.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class ScrollViewCompare: UIViewController {
+final class ComparableContainerViewController: UIViewController {
     private var noMovableHeaderView = UIView()
     private let scrollView = UIScrollView()
     private var advertParametersViews: [UIView] = []
@@ -30,7 +30,7 @@ final class ScrollViewCompare: UIViewController {
     }
     
     private func setupParameters() {
-        let adverts = adverts()
+        let adverts = adverts1()
         let headers = adverts.headers
         let (views, parameterHeights) = ComparableViewBuilder
             .createAdvertViews(for: adverts,
@@ -63,7 +63,7 @@ final class ScrollViewCompare: UIViewController {
     }
 }
 
-extension ScrollViewCompare: UIScrollViewDelegate {
+extension ComparableContainerViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let currentPositionX = scrollView.contentOffset.x
         noMovableHeaderView.frame = .init(origin: .init(x: currentPositionX, y: noMovableHeaderView.frame.minY),
@@ -71,61 +71,9 @@ extension ScrollViewCompare: UIScrollViewDelegate {
     }
 }
 
-extension ScrollViewCompare {
+extension ComparableContainerViewController {
     enum Constants {
         static let itemSpacing: CGFloat = 16.0
         static let headerHeight: CGFloat = 22.0
-    }
-}
-
-
-struct Model: Decodable {
-    let advert: Advert
-    
-    struct Advert: Decodable {
-        let parameters: [[String: String]]
-    }
-    
-    enum Constants {
-        static let name = "label"
-        static let value = "value"
-    }
-}
-
-extension Model: ComparableAdvert {
-    func advertParameters(for names: [String]) -> [String] {
-        var dict: [String: String] = [:]
-        
-        advert.parameters.forEach {
-            guard let name = $0[Constants.name],
-                  let value = $0[Constants.value] else {
-                return
-            }
-            dict[name] = value
-        }
-        
-        return names.map { dict[$0] ?? " - " }
-    }
-}
-
-protocol ComparableAdvert {
-    func advertParameters(for names: [String]) -> [String]
-}
-
-
-extension Array where Element == Model {
-    var headers: [String] {
-        let x = map { $0.advert.parameters }
-        if x.isEmpty { return [] }
-        var indexX = 0
-        var count = 0
-        x.enumerated().forEach { index, parameters in
-            if count < parameters.count {
-                count = parameters.count
-                indexX = index
-            }
-        }
-        
-        return x[indexX].compactMap { $0[Element.Constants.name] }
     }
 }

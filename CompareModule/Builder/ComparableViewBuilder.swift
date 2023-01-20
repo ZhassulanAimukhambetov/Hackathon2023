@@ -24,6 +24,8 @@ enum ComparableViewBuilder {
             y = y + headerHeight + spaicing
             yArray.append(y)
             adverts.enumerated().forEach { advertIndex, _ in
+                label.text = nil
+                label.sizeToFit()
                 label.text = allParameters[advertIndex][index]
                 label.sizeToFit()
                 height = max(height, label.frame.height)
