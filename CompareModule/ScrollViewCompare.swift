@@ -11,6 +11,8 @@ final class ScrollViewCompare: UIViewController {
     
     var headers: [UIView] = []
     
+    var noMovableHeaderView = UIView()
+    
     let scrollView: UIScrollView = .init()
     var params: [String] = []
     
@@ -78,6 +80,9 @@ final class ScrollViewCompare: UIViewController {
         
         containers.views.forEach { scrollView.addSubview($0) }
         scrollView.delegate = self
+        
+        appendHeaders(headerTitles: headers, parameterHeights: containers.heightArr)
+        scrollView.addSubview(noMovableHeaderView)
     }
     
     
@@ -117,6 +122,46 @@ final class ScrollViewCompare: UIViewController {
         return (views, heightArray)
     }
     
+    func appendHeaders(headerTitles: [String], parameterHeights: [CGFloat]) {
+        guard headerTitles.count == parameterHeights.count else { return }
+        
+        let headerSpaceHeight = CGFloat(parameterHeights.count) * (44 + 16 + 16)
+        let allParameterHeights = parameterHeights.reduce(0) { partialResult, parameterHeight in
+            return partialResult + parameterHeight
+        }
+        
+        noMovableHeaderView.frame = .init(x: 0,
+                                          y: 0,
+                                          width: view.bounds.width,
+                                          height: allParameterHeights + headerSpaceHeight)
+        
+        scrollView.contentSize = .init(width: 50000, height: noMovableHeaderView.bounds.height)
+        var totalHeight: CGFloat = 0
+        
+        for (index, headerTitle) in headerTitles.enumerated() {
+            let y: CGFloat
+            
+            if index == 0 {
+                y = 0
+            } else {
+                let parameterHeight = parameterHeights[index - 1]
+                let blockHeight = 44 + 16 + parameterHeight + 16
+                totalHeight += blockHeight
+                y = totalHeight
+                
+                print("\(index) -  \(y)")
+            }
+            
+            let label = UILabel(frame: .init(x: 16, y: y, width: view.bounds.width / 2, height: 44))
+            label.backgroundColor = .blue
+            label.text = headerTitle
+            if index == headerTitles.count - 1 {
+                label.backgroundColor = .red
+            }
+            noMovableHeaderView.addSubview(label)
+        }
+    }
+    
     func createAdvertContainerView(advert: Advert,
                                    x: CGFloat,
                                    width: CGFloat,
@@ -130,6 +175,9 @@ final class ScrollViewCompare: UIViewController {
             label.text = parameter
             label.numberOfLines = 0
             label.sizeToFit()
+            if index == advert.parameters.count - 1 {
+                label.backgroundColor = .brown
+            }
             containerView.addSubview(label)
             lastHeigt = label.frame.height
         }
@@ -143,12 +191,11 @@ final class ScrollViewCompare: UIViewController {
 extension ScrollViewCompare: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let currentPositionX = scrollView.contentOffset.x
-        for header in headers {
-            header.frame = CGRect(x: currentPositionX,
-                                  y: header.frame.minY,
-                                  width: header.bounds.width,
-                                  height: header.bounds.height)
-        }
+        
+        noMovableHeaderView.frame = .init(x: currentPositionX,
+                                          y: noMovableHeaderView.frame.minY,
+                                          width: noMovableHeaderView.bounds.width,
+                                          height: noMovableHeaderView.bounds.height)
     }
 }
 
