@@ -12,6 +12,13 @@ struct Model: Decodable {
     
     struct Advert: Decodable {
         let parameters: [[String: String]]
+        let price: Int
+        let name: String?
+        let photos: [Photo]
+    }
+    
+    struct Photo: Decodable {
+        let path: String?
     }
     
     enum Constants {
@@ -21,6 +28,18 @@ struct Model: Decodable {
 }
 
 extension Model: ComparableAdvert {
+    var photoUrl: String? {
+        advert.photos.first?.path
+    }
+    
+    var name: String? {
+        advert.name
+    }
+    
+    var price: String {
+        String(advert.price)
+    }
+    
     func advertParameters(for names: [String]) -> [String] {
         var dict: [String: String] = [:]
         

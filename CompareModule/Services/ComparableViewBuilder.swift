@@ -12,16 +12,17 @@ enum ComparableViewBuilder {
                                   headers: [String],
                                   width: CGFloat,
                                   headerHeight: CGFloat,
+                                  parameterNameHeight: CGFloat,
                                   spaicing: CGFloat) -> (views: [UIView], parameterHeights: [CGFloat]) {
         let allParameters: [[String]] = adverts.map { $0.advertParameters(for: headers) }
         var heightArray = [CGFloat]()
         var yArray = [CGFloat]()
-        var y: CGFloat = 0.0
+        var y: CGFloat = headerHeight
         for (index, _) in headers.enumerated() {
             var height: CGFloat = 0.0
             let label = UILabel(frame: .init(origin: .zero, size: .init(width: width - spaicing, height: 0)))
             label.numberOfLines = 0
-            y = y + headerHeight + spaicing
+            y = y + parameterNameHeight + spaicing
             yArray.append(y)
             adverts.enumerated().forEach { advertIndex, _ in
                 label.text = nil
@@ -50,10 +51,11 @@ enum ComparableViewBuilder {
                                           parameterHeights: [CGFloat],
                                           width: CGFloat,
                                           spacing: CGFloat,
-                                          headerHeight: CGFloat) -> UIView? {
+                                          headerHeight: CGFloat,
+                                          parameterNameHeight: CGFloat) -> UIView? {
         guard headerTitles.count == parameterHeights.count else { return nil }
         let noMovableHeaderView = UIView()
-        let headerSpaceHeight = CGFloat(parameterHeights.count) * (headerHeight + spacing + spacing)
+        let headerSpaceHeight = CGFloat(parameterHeights.count) * (parameterNameHeight + spacing + spacing)
         let allParameterHeights = parameterHeights.reduce(0) { partialResult, parameterHeight in
             return partialResult + parameterHeight
         }
@@ -67,15 +69,15 @@ enum ComparableViewBuilder {
             let y: CGFloat
             
             if index == 0 {
-                y = 0
+                y = headerHeight
             } else {
                 let parameterHeight = parameterHeights[index - 1]
-                let blockHeight = headerHeight + spacing + parameterHeight + spacing
+                let blockHeight = parameterNameHeight + spacing + parameterHeight + spacing
                 totalHeight += blockHeight
-                y = totalHeight
+                y = totalHeight + headerHeight
             }
             
-            let label = UILabel(frame: .init(x: spacing, y: y, width: width / 2, height: headerHeight))
+            let label = UILabel(frame: .init(x: spacing, y: y, width: width / 2, height: parameterNameHeight))
             label.text = headerTitle
             label.font = .systemFont(ofSize: 12)
             label.textColor = .lightGray

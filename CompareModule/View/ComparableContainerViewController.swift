@@ -13,10 +13,13 @@ final class ComparableContainerViewController: UIViewController {
     private let scrollView = UIScrollView()
     private var noMovableHeaderView = UIView()
     private var advertParametersViews: [UIView] = []
+    private var headerViews: [UIView] = []
     private var leftPinedView = UIView()
     private var leftSeparator = UIView()
+
     private var rightSeparator = UIView()
     private var rightPinedView = UIView()
+
     private var pinnedView = UIView()
 
     private let directionService = ScrollDirectionService()
@@ -35,11 +38,12 @@ final class ComparableContainerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupHeaders()
         setupScrollView()
         setupParameters()
         setupDirectionService()
         
-        setPinnedView(for: 4)
+        setPinnedView(for: 2)
     }
     
     private func setupScrollView() {
@@ -50,12 +54,27 @@ final class ComparableContainerViewController: UIViewController {
         scrollView.delegate = self
     }
     
+    private func setupHeaders() {
+        headerViews = items.enumerated().map { index, item in
+            let width = view.bounds.width / 2
+            let x = CGFloat(index) * width
+            let headerView = ComparableAdvertHeaderView(frame: .init(origin: .init(x: x, y: 0),
+                                                                     size: CGSize(width: width, height: 200)))
+            
+            headerView.configure(with: item)
+            scrollView.addSubview(headerView)
+            
+            return headerView
+        }
+    }
+    
     private func setupParameters() {
         let (views, parameterHeights) = ComparableViewBuilder
             .createAdvertViews(for: items,
                                headers: headers,
                                width: view.bounds.width / 2,
-                               headerHeight: Constants.headerHeight,
+                               headerHeight: 200,
+                               parameterNameHeight: Constants.headerHeight,
                                spaicing: Constants.itemSpacing)
         views.forEach { scrollView.addSubview($0) }
         advertParametersViews = views
@@ -67,8 +86,8 @@ final class ComparableContainerViewController: UIViewController {
         guard let view = ComparableViewBuilder.createNoMovableHeaderView(headerTitles: headers,
                                                                          parameterHeights: parameterHeights,
                                                                          width: view.bounds.width,
-                                                                         spacing: Constants.itemSpacing,
-                                                                         headerHeight: Constants.headerHeight)
+                                                                         spacing: Constants.itemSpacing,    headerHeight:  200,
+                                                                         parameterNameHeight: Constants.headerHeight)
         else { return }
         
         noMovableHeaderView = view
@@ -109,10 +128,12 @@ final class ComparableContainerViewController: UIViewController {
     }
     
     private func setPinnedView(for index: Int) {
-        let container = advertParametersViews[index]
+        pinnedView = advertParametersViews[index]
         
-        guard let leftContainer = try? container.copyObject() as? UIView,
-              let rightContainer = try? container.copyObject() as? UIView
+        guard let leftContainer = try? pinnedView.copyObject(),
+              let rightContainer = try? pinnedView.copyObject(),
+              let leftHeader = try? headerViews[index].copyObject(),
+              let rightHeader = try? headerViews[index].copyObject()
         else { return }
     
         leftPinedView.removeAllSubviews()
@@ -120,11 +141,15 @@ final class ComparableContainerViewController: UIViewController {
         
         leftContainer.frame = leftPinedView.bounds
         leftPinedView.addSubview(leftContainer)
+        
+        leftHeader.frame = .init(origin: .zero, size: leftHeader.bounds.size)
+        leftPinedView.addSubview(leftHeader)
 
         rightContainer.frame = rightPinedView.bounds
         rightPinedView.addSubview(rightContainer)
         
-        pinnedView = container
+        rightHeader.frame = .init(origin: .zero, size: rightHeader.bounds.size)
+        rightPinedView.addSubview(rightHeader)
     }
     
     private func setupDirectionService() {
@@ -159,6 +184,7 @@ final class ComparableContainerViewController: UIViewController {
 extension ComparableContainerViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let currentPositionX = scrollView.contentOffset.x
+        let currentPositionY = scrollView.contentOffset.y
         directionService.didScroll(to: currentPositionX)
         noMovableHeaderView.frame = .init(origin: .init(x: currentPositionX, y: noMovableHeaderView.frame.minY),
                                           size: noMovableHeaderView.bounds.size)
@@ -191,9 +217,9 @@ extension UIView {
     }
 }
 
-extension NSObject {
-    func copyObject<T:NSObject>() throws -> T? {
-        let data = try NSKeyedArchiver.archivedData(withRootObject:self, requiringSecureCoding:false)
+extension UIView {
+    func copyObject<T: UIView>() throws -> T? {
+        let data = try NSKeyedArchiver.archivedData(withRootObject: self, requiringSecureCoding: false)
         return try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(data) as? T
     }
 }

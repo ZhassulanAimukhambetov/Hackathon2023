@@ -6,5 +6,8 @@
 //
 
 protocol ComparableAdvert {
+    var photoUrl: String? { get }
+    var name: String? { get }
+    var price: String { get }
     func advertParameters(for names: [String]) -> [String]
 }
