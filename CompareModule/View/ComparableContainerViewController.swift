@@ -158,6 +158,13 @@ final class ComparableContainerViewController: UIViewController {
               let leftHeader = try? headerViews[index].copyObject() as? ComparableAdvertHeaderView,
               let rightHeader = try? headerViews[index].copyObject() as? ComparableAdvertHeaderView
         else { return }
+ //       leftHeader.backgroundColor = .red
+//        leftHeader.lockButton.frame = CGRect(x: 5, y: 5, width: 30, height: 30)
+//        leftHeader.lockButton.isSelected = true
+//        print("Frame - ", leftHeader.lockButton.frame)
+//        let v = UIView(frame: leftHeader.lockButton.frame)
+//        v.backgroundColor = .black
+//        leftHeader.addSubview(v)
         leftHeader.setPin()
         rightHeader.setPin()
 
@@ -262,9 +269,14 @@ extension UIView {
 }
 
 extension UIView {
-    func copyObject<T: UIView>() throws -> T? {
-        let data = try NSKeyedArchiver.archivedData(withRootObject: self, requiringSecureCoding: false)
-        return try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(data) as? T
-    }
+//    func copyObject<T: UIView>() throws -> T? {
+//        let data = try NSKeyedArchiver.archivedData(withRootObject: self, requiringSecureCoding: false)
+//        return try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(data) as? T
+//    }
+    
+
+        func copyObject<T: UIView>() -> T {
+            return NSKeyedUnarchiver.unarchiveObject(with: NSKeyedArchiver.archivedData(withRootObject: self)) as! T
+        }
 }
 

@@ -42,7 +42,7 @@ final class ComparableAdvertHeaderView: UIView {
         $0.backgroundColor = .brown
         return $0
     }(UIButton())
-    private let lockButton: UIButton = {
+    let lockButton: UIButton = {
         $0.setImage(UIImage(systemName: "lock.open")?.withRenderingMode(.alwaysOriginal), for: .normal)
         $0.setImage(UIImage(systemName: "lock.fill")?.withRenderingMode(.alwaysOriginal), for: .selected)
         $0.backgroundColor = .white.withAlphaComponent(0.8)
@@ -62,10 +62,20 @@ final class ComparableAdvertHeaderView: UIView {
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
+        
+        layer.cornerRadius = 8
+        backgroundColor = .green
+        setupSubviews()
+        setupSubviewsSize()
+        setupAction()
     }
     
     func setPin() {
-        lockButton.setImage(.checkmark, for: .normal)
+        lockButton.isSelected = true
+        nameLabel.text = "alskdjcmpaoisjcmpoa"
+//        lockButton.isSelected.toggle()
+//        lockButton.isSelected.toggle()
+
     }
     
     func configure(with model: ComparableAdvert) {
