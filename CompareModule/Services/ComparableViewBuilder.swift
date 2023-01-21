@@ -17,7 +17,7 @@ enum ComparableViewBuilder {
         let allParameters: [[String]] = adverts.map { $0.advertParameters(for: headers) }
         var heightArray = [CGFloat]()
         var yArray = [CGFloat]()
-        var y: CGFloat = headerHeight
+        var y: CGFloat = 0.0
         for (index, _) in headers.enumerated() {
             var height: CGFloat = 0.0
             let label = UILabel(frame: .init(origin: .zero, size: .init(width: width - spaicing, height: 0)))
@@ -39,6 +39,7 @@ enum ComparableViewBuilder {
             let x = CGFloat(index) * width
             return  createAdvertContainerView(advertParameters: allParameters[index],
                                               x: x,
+                                              headerHeight: headerHeight,
                                               width: width,
                                               spacing: spaicing,
                                               yArr: yArray)
@@ -60,7 +61,7 @@ enum ComparableViewBuilder {
             return partialResult + parameterHeight
         }
         
-        noMovableHeaderView.frame = .init(origin: .zero,
+        noMovableHeaderView.frame = .init(origin: .init(x: .zero, y: headerHeight),
                                           size: .init(width: width, height: allParameterHeights + headerSpaceHeight))
         
         var totalHeight: CGFloat = 0
@@ -69,12 +70,12 @@ enum ComparableViewBuilder {
             let y: CGFloat
             
             if index == 0 {
-                y = headerHeight
+                y = 0
             } else {
                 let parameterHeight = parameterHeights[index - 1]
                 let blockHeight = parameterNameHeight + spacing + parameterHeight + spacing
                 totalHeight += blockHeight
-                y = totalHeight + headerHeight
+                y = totalHeight
             }
             
             let label = UILabel(frame: .init(x: spacing, y: y, width: width / 2, height: parameterNameHeight))
@@ -89,6 +90,7 @@ enum ComparableViewBuilder {
     
     private static func createAdvertContainerView(advertParameters: [String],
                                                   x: CGFloat,
+                                                  headerHeight: CGFloat,
                                                   width: CGFloat,
                                                   spacing: CGFloat,
                                                   yArr: [CGFloat]) -> UIView {
@@ -104,7 +106,7 @@ enum ComparableViewBuilder {
             containerView.addSubview(label)
             lastHeigt = label.frame.height
         }
-        containerView.frame = CGRect(origin: .init(x: x, y: .zero),
+        containerView.frame = CGRect(origin: .init(x: x, y: headerHeight),
                                      size: CGSize(width: width, height: yArr.last! + lastHeigt))
         
         return containerView

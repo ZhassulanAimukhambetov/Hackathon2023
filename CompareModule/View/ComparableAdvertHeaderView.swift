@@ -64,6 +64,10 @@ final class ComparableAdvertHeaderView: UIView {
         super.init(coder: coder)
     }
     
+    func setPin() {
+        lockButton.setImage(.checkmark, for: .normal)
+    }
+    
     func configure(with model: ComparableAdvert) {
         nameLabel.text = model.name
         priceLabel.text = model.price
@@ -79,7 +83,7 @@ final class ComparableAdvertHeaderView: UIView {
     }
     
     @objc private func didTapLockButton() {
-        lockButton.isSelected = !lockButton.isSelected
+        lockButton.isSelected.toggle()
         let needLock = lockButton.isSelected
         handler?(.lock(needLock: needLock))
     }

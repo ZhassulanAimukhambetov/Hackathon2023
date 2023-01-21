@@ -20,7 +20,7 @@ final class ComparableContainerViewController: UIViewController {
     private var rightSeparator = UIView()
     private var rightPinedView = UIView()
 
-    private var pinnedView = UIView()
+    private var pinnedView: UIView?
 
     private let directionService = ScrollDirectionService()
     
@@ -42,8 +42,8 @@ final class ComparableContainerViewController: UIViewController {
         setupScrollView()
         setupParameters()
         setupDirectionService()
-        
-        setPinnedView(for: 2)
+        //headerViews.forEach { scrollView.addSubview($0)}
+        //setPinnedView(for: 2)
     }
     
     private func setupScrollView() {
@@ -62,8 +62,25 @@ final class ComparableContainerViewController: UIViewController {
                                                                      size: CGSize(width: width, height: 200)))
             
             headerView.configure(with: item)
+            headerView.handler = { [unowned self] action in
+                switch action {
+                case .call:
+                    break
+                case .remove:
+                    break
+                case .lock(let needLock):
+                    guard let index = headerViews.firstIndex(where: { v in
+                        return v === headerView
+                    }) else { return }
+                    if needLock {
+                        setPinnedView(for: index)
+                        //headerViews.forEach {  }
+                    } else {
+                        unpint(for: index)
+                    }
+                }
+            }
             scrollView.addSubview(headerView)
-            
             return headerView
         }
     }
@@ -100,60 +117,88 @@ final class ComparableContainerViewController: UIViewController {
         let width = CGFloat(advertParametersViews.count) * view.bounds.width / 2
         let size = parameterView.frame.size
         
-        leftPinedView.frame = CGRect(origin: .zero, size: size)
+        leftPinedView.frame = CGRect(origin: .zero, size: CGSize(width: size.width, height: size.height + 200))
         rightPinedView.frame = CGRect(origin: .init(x: view.bounds.width - size.width, y: .zero),
-                                      size: size)
+                                      size: CGSize(width: size.width, height: size.height + 200))
         
         leftPinedView.alpha = 0
+        
         rightPinedView.alpha = 0
+
         leftPinedView.backgroundColor = .white
         rightPinedView.backgroundColor = .white
         
         leftSeparator.frame = CGRect(origin: CGPoint(x: size.width, y: 0),
-                                     size: CGSize(width: 1, height: size.height))
+                                     size: CGSize(width: 1, height: size.height + 200))
         leftSeparator.backgroundColor = .lightGray
         leftSeparator.alpha = 0
         
         rightSeparator.frame = CGRect(origin: CGPoint(x: 1, y: 0),
-                                      size: CGSize(width: 1, height: size.height))
+                                      size: CGSize(width: 1, height: size.height + 200))
         rightSeparator.backgroundColor = .lightGray
         rightSeparator.alpha = 0
 
         
-        scrollView.contentSize = CGSize(width: width, height: parameterView.bounds.height)
+        scrollView.contentSize = CGSize(width: width, height: parameterView.bounds.height + 200)
         scrollView.addSubview(leftPinedView)
         scrollView.addSubview(rightPinedView)
         scrollView.addSubview(leftSeparator)
         scrollView.addSubview(rightSeparator)
+        
+        rightPinedView.isUserInteractionEnabled = false
+        leftPinedView.isUserInteractionEnabled = false
+        noMovableHeaderView.isUserInteractionEnabled = false
     }
     
     private func setPinnedView(for index: Int) {
         pinnedView = advertParametersViews[index]
         
-        guard let leftContainer = try? pinnedView.copyObject(),
-              let rightContainer = try? pinnedView.copyObject(),
-              let leftHeader = try? headerViews[index].copyObject(),
-              let rightHeader = try? headerViews[index].copyObject()
+        guard let leftContainer = try? pinnedView?.copyObject(),
+              let rightContainer = try? pinnedView?.copyObject(),
+              let leftHeader = try? headerViews[index].copyObject() as? ComparableAdvertHeaderView,
+              let rightHeader = try? headerViews[index].copyObject() as? ComparableAdvertHeaderView
         else { return }
-    
+        leftHeader.setPin()
+        rightHeader.setPin()
+
+
         leftPinedView.removeAllSubviews()
         rightPinedView.removeAllSubviews()
         
-        leftContainer.frame = leftPinedView.bounds
+        leftContainer.frame = CGRect(origin: .init(x: .zero, y: 200),
+                                     size: leftPinedView.bounds.size)
         leftPinedView.addSubview(leftContainer)
         
         leftHeader.frame = .init(origin: .zero, size: leftHeader.bounds.size)
         leftPinedView.addSubview(leftHeader)
 
-        rightContainer.frame = rightPinedView.bounds
+        rightContainer.frame = CGRect(origin: .init(x: .zero, y: 200),
+                                      size: rightPinedView.bounds.size)
         rightPinedView.addSubview(rightContainer)
         
         rightHeader.frame = .init(origin: .zero, size: rightHeader.bounds.size)
         rightPinedView.addSubview(rightHeader)
+        
+        leftHeader.isUserInteractionEnabled = false
+        rightHeader.isUserInteractionEnabled = false
+        
+        leftContainer.isUserInteractionEnabled = false
+        rightHeader.isUserInteractionEnabled = false
+    }
+    
+    private func unpint(for index: Int) {
+        pinnedView = nil
+        leftPinedView.removeAllSubviews()
+        rightPinedView.removeAllSubviews()
+        leftPinedView.alpha = 0
+        rightPinedView.alpha = 0
+        leftSeparator.alpha = 0
+        rightSeparator.alpha = 0
     }
     
     private func setupDirectionService() {
         directionService.didChangeDirection = { [unowned self] direction in
+            guard let pinnedView else { return }
             switch direction {
             case .up(let offset):
                 if offset > pinnedView.frame.minX {
@@ -184,7 +229,6 @@ final class ComparableContainerViewController: UIViewController {
 extension ComparableContainerViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let currentPositionX = scrollView.contentOffset.x
-        let currentPositionY = scrollView.contentOffset.y
         directionService.didScroll(to: currentPositionX)
         noMovableHeaderView.frame = .init(origin: .init(x: currentPositionX, y: noMovableHeaderView.frame.minY),
                                           size: noMovableHeaderView.bounds.size)
