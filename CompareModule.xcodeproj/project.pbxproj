@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6EE56C7E297B24FE00EAD2E4 /* ComparableContainerViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE56C7D297B24FE00EAD2E4 /* ComparableContainerViewController+Ext.swift */; };
+		6EE56C7E297B24FE00EAD2E4 /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE56C7D297B24FE00EAD2E4 /* Mock.swift */; };
 		6EE56C80297B25BE00EAD2E4 /* ComparableViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE56C7F297B25BE00EAD2E4 /* ComparableViewBuilder.swift */; };
 		6EE56C84297B4A5D00EAD2E4 /* Directions.json in Resources */ = {isa = PBXBuildFile; fileRef = 6EE56C83297B4A5D00EAD2E4 /* Directions.json */; };
 		6EE56C87297B509E00EAD2E4 /* ComparableAdvert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE56C86297B509E00EAD2E4 /* ComparableAdvert.swift */; };
@@ -21,7 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6EE56C7D297B24FE00EAD2E4 /* ComparableContainerViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ComparableContainerViewController+Ext.swift"; sourceTree = "<group>"; };
+		6EE56C7D297B24FE00EAD2E4 /* Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mock.swift; sourceTree = "<group>"; };
 		6EE56C7F297B25BE00EAD2E4 /* ComparableViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparableViewBuilder.swift; sourceTree = "<group>"; };
 		6EE56C83297B4A5D00EAD2E4 /* Directions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Directions.json; sourceTree = "<group>"; };
 		6EE56C86297B509E00EAD2E4 /* ComparableAdvert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparableAdvert.swift; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				A203FCD2297AECB700F8EB12 /* ComparableContainerViewController.swift */,
-				6EE56C7D297B24FE00EAD2E4 /* ComparableContainerViewController+Ext.swift */,
+				6EE56C7D297B24FE00EAD2E4 /* Mock.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -189,7 +189,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6EE56C7E297B24FE00EAD2E4 /* ComparableContainerViewController+Ext.swift in Sources */,
+				6EE56C7E297B24FE00EAD2E4 /* Mock.swift in Sources */,
 				6EE56C87297B509E00EAD2E4 /* ComparableAdvert.swift in Sources */,
 				A203FCBF297A873400F8EB12 /* AppDelegate.swift in Sources */,
 				6EE56C89297B50BC00EAD2E4 /* ComparableModel.swift in Sources */,

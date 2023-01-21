@@ -8,8 +8,10 @@
 import UIKit
 
 final class ComparableContainerViewController: UIViewController {
-    private var noMovableHeaderView = UIView()
+    private let items: [ComparableAdvert]
+    private let headers: [String]
     private let scrollView = UIScrollView()
+    private var noMovableHeaderView = UIView()
     private var advertParametersViews: [UIView] = []
     private var leftPinedView = UIView()
     private var leftSeparator = UIView()
@@ -18,6 +20,17 @@ final class ComparableContainerViewController: UIViewController {
     private var pinnedView = UIView()
 
     private let directionService = ScrollDirectionService()
+    
+    init(items: [ComparableAdvert], headers: [String]) {
+        self.items = items
+        self.headers = headers
+        
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,10 +51,8 @@ final class ComparableContainerViewController: UIViewController {
     }
     
     private func setupParameters() {
-        let adverts = adverts1()
-        let headers = adverts.headers
         let (views, parameterHeights) = ComparableViewBuilder
-            .createAdvertViews(for: adverts,
+            .createAdvertViews(for: items,
                                headers: headers,
                                width: view.bounds.width / 2,
                                headerHeight: Constants.headerHeight,

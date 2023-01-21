@@ -15,7 +15,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
-        let vc = ComparableContainerViewController()
+        let items = Mock.adverts()
+        let headers = items.headers
+        let vc = ComparableContainerViewController(items: items, headers: headers)
         let nc = UINavigationController(rootViewController: vc)
         
         window = UIWindow(windowScene: windowScene)
